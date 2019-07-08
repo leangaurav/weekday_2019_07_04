@@ -1,0 +1,45 @@
+Q1. 6 19
+
+
+Q2.s = input('Enter a string:')
+  
+      print('length of string is',len(s))
+    
+
+Q3.
+
+
+Q4.abde
+
+
+Q5.abde
+
+
+Q6.abababab
+    
+
+Q7. ab
+
+       ab
+    
+       ab
+
+       ab
+    
+
+Q8.   
+ 
+
+Q9. Gaurav
+    None
+    
+
+Q10. <class 'int'>
+
+
+Q11. <class 'str'>
+     
+      26
+
+
+Q12.    
