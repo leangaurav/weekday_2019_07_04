@@ -1,11 +1,10 @@
 # Maintain Folder Structure:
-- For each assignment, there will be a folder by name of assignment
+- For assignments there is a folder Assignment. All assignments will be present there classwise.
   Ex: Assignment010, Assignment020....
-- Create solution files by your name 
-- Always submit by same name
-- If names conflict add a number at end of your name
-- Use Python Identifier naming convention for file names (use alphabets and underscores. Don't use spaces etc.)
-  ex: gaurav_gupta.txt
+- PPT folder will contain PPTs 
+- Root of repo will contain the notebooks and scripts done in the class
+- Use Python Identifier naming convention for file or folder names (use alphabets and underscores. Don't use spaces etc.)
+  ex: Assignment\gaurav_gupta\assignment1.txt
 
 # Steps to Commit
 1. check untracked files via `git status`
@@ -37,3 +36,8 @@
 - Do not upload any PDF or Doc files.
 - For projects upload as .zip files with a readme.txt describing how to use your code.
 - Maintain common sense and write simple code :-P
+
+
+# And most important. If you are added as collaborator, it means you can delete things. 
+# Don't mess with other peoples' stuff :)
+# Especially mine :-P
