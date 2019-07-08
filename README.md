@@ -7,6 +7,11 @@
 - Use Python Identifier naming convention for file names (use alphabets and underscores. Don't use spaces etc.)
   ex: gaurav_gupta.txt
 
+# Steps to Commit
+1. check untracked files via `git status`
+2. add untracked file `git add <filename>` or `git add *` Prefer first method over the other
+3. Commit your changes `git commit -m "meaningful message"`
+4. Push your changes to the repo `git push`
 
 # Before You Commit !!
 - Before you commit always do a git pull.
