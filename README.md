@@ -19,10 +19,12 @@
 - If folder exists add solution by your name.
 
 # Commit format and Solution Format
-- Create solution file by your name
-- Upload assignments as plain text files in this format
+- Create a folder by your name in Assignments folder where you will put your solution files. 
+- If your name is already taken create with a number at end
+- Upload assignments as plain text files with all solutions for one assignment in a single file.
+- Use this format
   
-  
+  Let File be Assignment1.txt. Its content should look like this 
   Q1
   Solution
   
@@ -30,6 +32,7 @@
   Solution  
   ...  
   ...  
+
 
 - Do not upload any PDF or Doc files.
 - For projects upload as .zip files with a readme.txt describing how to use your code.
