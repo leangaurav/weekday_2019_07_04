@@ -1,0 +1,199 @@
+s1 = 'Gaurav'
+s2 = 'tuteur.py@gmail.com'
+
+print(len(s1),len(s2))
+
+ans: 6 19
+
+
+
+s = 'Hello world'
+
+print(len(s))
+
+ans: 11
+
+
+
+s1 = int(input("Enter a number: "))
+
+s2 = int(input("Enter a number: "))
+
+print(s1 + s2)
+print(s2 - s1)
+
+ans:Enter a number: 30
+
+Enter a number: 40
+
+70
+
+10
+
+
+
+s1 = 'ab'
+
+s2 = 'de'
+
+s3 = s1 + s2
+
+print(s3)
+
+ans:abde
+
+
+
+s1 = 'ab'*4
+
+print(s1)
+
+ans:abababab
+
+
+
+s1 = 'ab\n'*4
+
+print(s1)
+
+ans:
+ab
+ab
+ab
+ab
+
+
+
+#have a dought how to enter a unknown string
+
+#s1 = input(" ")
+
+#s2 = int(input("Enter a number: "))
+
+s1 = 'ab\n'
+
+s2 = 4
+
+s3 = s1*s2
+
+print(s3)
+
+ans:
+ab
+ab
+ab
+ab
+
+
+
+res = print('Gaurav')
+
+print(res)
+
+ans:
+Gaurav
+
+None
+
+
+
+res = len('tuteur.py@gmail.com')
+
+print(type(res))
+
+ans:<class 'str'>
+
+26
+
+
+
+
+dir()
+
+
+
+dir('__builtins__')
+
+
+
+#name of the square root function is :
+
+x = 4
+
+import math
+
+print(math.sqrt(x))
+
+ans: 2.0
+
+
+
+s1 = int(input("Enter a number: "))
+
+s2 = int(input("Enter a number: "))
+
+s3 = int(input("Enter a number: "))
+
+s4 = int(input("Enter a number: "))
+
+s = (s1 + s2 + s3 +s4)/4
+
+print(s)
+
+ans:
+Enter a number: 4
+
+Enter a number: 8
+
+Enter a number: 6
+
+Enter a number: 10
+
+7.0
+
+
+
+help(abs)
+
+ans:
+Help on built-in function abs in module builtins:
+abs(x, /)
+    Return the absolute value of the argument.
+    
+
+
+print(_name_)
+
+ans:---------------------------------------------------------------------------
+NameError
+Traceback (most recent call last)
+<ipython-input-38-468f48bdb979> in <module>
+----> 1 
+print(_name_)
+
+
+NameError: name '_name_' is not defined
+
+dir(int)
+
+
+# It does not contain name attribute
+
+
+print(_name_)
+
+print(__builtins__._name_)
+
+print(int._name_)
+
+ans:
+---------------------------------------------------------------------------
+NameError
+    Traceback (most recent call last)
+<ipython-input-40-4ab5cf5eddd4> in <module>
+----> 1 
+print(_name_)
+      2 print(__builtins__._name_)
+      3 print(int._name_)
+
+NameError: name '_name_' is not defined
