@@ -1,0 +1,147 @@
+==================================================================================================================
+
+#Q1 Solution
+
+F = int(input("Enter the temperature value in Farenheit : "))
+C = ((F-32)*5)/9
+print("The temperature in celcius : ", C)
+
+
+==================================================================================================================
+
+ 
+
+#Q2 Solution
+
+x = int(input("Enter a number : "))
+y = x**2
+z = x**3
+print("The square of the given number is : ", y)
+print("The cube of the given number is : ", z)
+
+
+===================================================================================================================
+
+
+#Q3 Solution
+
+n = int(input())
+m = int(input())
+z = (n**2) + (m**2)
+print("The required result is : ", z)
+
+===================================================================================================================
+
+#Q4 Solution
+
+M = int(input("Enter the value of M : "))
+N = int(input("Enter the value f N : "))
+print(pow(M,N))
+Z = M**N
+print("By using ** : ", Z)
+
+===================================================================================================================
+
+#Q5 Solution
+
+P = int(input("Enter the Principle Amount : "))
+T = int(input("Enter the Time duration : "))
+R = int(input("Enter the rate of interest"))
+
+S_I = (P*T*R)/100
+print("The required simple interest is ", S_I)
+
+===================================================================================================================
+
+#Q6 Solution
+
+#Amount Formula = P (1 + r/n) (nt)
+#Formula for Compounded interest = P (1 + r/n) (nt) - P
+
+P = int(input("Enter the Principle amount : "))
+T = int(input("Enter the duration of time in years : "))
+R = int(input("Enter the rate of interest : "))
+x = (1+(R/12))**(12*T)
+A = P*x
+print("The required amount is : ", A)
+C_I = (P*x)-P
+print("The required Compound interest is : ", C_I)
+
+
+===================================================================================================================
+
+#Q7 Solution
+
+#sum of n natural numbers is n/2(n+1)
+
+n = int(input("Enter the value of n : "))
+x = ((n/2)*(n+1))
+print("The required sum is : ", x)
+
+===================================================================================================================
+
+#Q8 Solution
+
+x = input("Enter the first number : ")
+y = input("Enter the second number : ")
+
+print("The value of first number before swap : ", x)
+print("The value of second number before swap : ",y)
+
+z = x
+x = y
+y = z
+
+print("The value of first number after swap : ",x)
+print("The value of secnd number after swap : ",y)
+
+x,y = y,x
+
+print("First number value after reswapping by second method ",x)
+print("Second number value after reswapping by second method ",y)
+
+====================================================================================================================
+
+#Q9 Solution
+
+***Doubt***
+
+====================================================================================================================
+
+#Q10 Solution
+
+x = input("Enter a character : ")
+print('The ASCII value of the given char' + x + "is : ", ord(x))
+
+====================================================================================================================
+
+#Q11 Solution
+
+import math
+a = input("Enter the area of circle")
+
+r= math.sqrt(int(a)/math.pi)
+print("The required radius is : ",r)
+
+circ = 2 * math.pi * r
+
+print("The required cirumference is : ", circ)
+
+=====================================================================================================================
+
+#Q12 Solution
+
+E = int(input('Marks obtained in English?' ))
+S = int(input('Marks obtained in Science?' ))
+M = int(input('Marks obtained in Maths?' ))
+P = int(input('Marks obtained in Psychology?' ))
+H = int(input('Marks obtained in Hindi?' ))
+T = E+S+M+P+H
+print("Total marks obtained = ", T)
+print("Max marks = 500")
+perc = (T*100)/500
+
+
+print("The required pecentage is", perc)
+
+====================================================================================================================
