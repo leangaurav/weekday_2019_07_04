@@ -1,0 +1,114 @@
+Q1> O/p
+
+A1> 6 19
+
+Q2> WAP to input a string and print its length.
+
+A2> 
+s1 = input("Enter a string\n")
+print(len(s1))
+
+Enter a string
+shubham charan pahari
+21
+
+Q3> WAP to input 2 numbers and print their sum and difference
+
+A3> 
+print("Enter two numbers")
+x = int(input())
+y = int(input())
+print("Sum :", x + y, "Differnce :", x - y)
+
+Enter two numbers
+25
+23
+Sum : 48 Differnce : 2
+
+Q4> O/p
+
+A4> abde
+
+Q5> O/p
+
+A5> abde
+
+Q6> O/p
+
+A6> abababab
+
+Q7> o/p
+
+A7>ab
+ab
+ab
+ab
+
+Q8> WAP to input a string s and a number n. Print the string n times on the screen, each should
+appear in a separate line (do not use any kind of loops, use the multiplication operator).
+
+A8> 
+print("Enter a string and a number")
+s = input()
+n = int(input())
+print((s+'\n')*n )
+
+Q9> o/p
+
+A9> 
+gaurav
+None
+
+Q10> o/p
+
+A10> <class 'int'>
+
+Q11> o/p
+
+A11> 
+<class 'str'>
+26
+
+Q12> Find the name of function to find the square root.
+
+A12> math.sqrt();
+
+Q13> WAP to input a number and print its square root ().
+
+A13>
+q = int(input('Enter number: '))
+print(math.sqrt(q))
+
+Q14> WAP to input 4 numbers from user and print their average
+
+A14>
+s1 = int(input('Enter 1st number: '))
+s2 = int(input('Enter 2nd number: '))
+s3 = int(input('Enter 3rd number: '))
+s4 = int(input('Enter 4th number: '))
+avg = (n1 + n2 + n3 + n4) / 4
+print("Average: ", avg)
+
+Q15> Use the help function to check what the abs function in python does.
+
+A15> returns absolute value of integer
+
+Q16> What is the output of this code when run from python interpreter.
+print(__name__) 
+
+A16> __main__
+
+Q17> What is the output of this code when run from python interpreter.
+print(__name__) 
+
+A17> __main__
+
+Q18> Does the dir of int class contain an attribute __name__ (Y/N).
+
+A18> N
+
+Q19> o/p
+
+A19>    __main__
+	builtins
+	int
