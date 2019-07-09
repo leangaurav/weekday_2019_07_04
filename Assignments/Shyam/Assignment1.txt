@@ -1,0 +1,60 @@
+Q1: 6 19
+
+Q2: s = input("Enter string:")
+    print(len(s))
+    
+Q3: a = int(input("Enter 1st number: "))
+    b = int(input("Enter 2nd number: "))
+    print("Sum: ", a + b)
+    print("Difference: ", a - b)
+    
+Q4: abde    
+
+Q5: abde
+
+Q6: abababab
+
+Q7: ab
+    ab
+    ab
+    ab
+    
+Q8: s = input("Enter string: ")
+    n = int(input("Enter number of lines: "))
+    print((s + '\n') * n)    
+    
+Q9: Gaurav
+    None
+    
+Q10: <class 'int'>
+
+Q11: <class 'str'>
+     26
+
+Q12: math.sqrt(); First import math
+
+Q13: import math
+     sq = int(input('Enter number: '))
+     print(math.sqrt(sq))
+     
+Q14: n1 = int(input('Enter 1st number: '))
+     n2 = int(input('Enter 2nd number: '))
+     n3 = int(input('Enter 3rd number: '))
+     n4 = int(input('Enter 4th number: '))
+     avg = (n1 + n2 + n3 + n4) / 4
+     print("Average: ", avg)
+     
+Q15: Help on built-in function abs in module builtins:
+
+     abs(x, /)
+     Return the absolute value of the argument.     
+ 
+Q16: __main__
+
+Q17: __main__
+
+Q18: N
+
+Q19: __main__
+     builtins
+     int

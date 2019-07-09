@@ -1,0 +1,76 @@
+A1>
+print("input temperature in fahrenheit")
+temp_fahrenheit = float(input())
+temp_celsius = (temp_fahrenheit - 32)*(5/9)
+print("temperature in celsius is: ",temp_celsius)
+
+A2>
+print("Enter a number")
+n = float(input())
+square = pow(n,2)
+cube = pow(n,3)
+print("Square {0:10.4f}\nCube {1:10.4f}".format(square, cube))
+
+A3>
+print("Enter 2 numbers")
+m = float(input())
+n = float(input())
+x = pow(m,2)+pow(n,2)
+print("{0:.4f}".format(x))
+
+A4>
+print("Enter 2 numbers")
+m = float(input())
+n = float(input())
+x = pow(m,n)
+y = m**n
+print("{0:.4f} {1:.4f}".format(x,y))
+
+A5>
+print("Enter principal,rate of interest and time to calculate simple interest")
+p = float(input())
+r = float(input())
+t = float(input())
+si = (p*r*t)/100
+print("{0:.2f}".format(si))
+
+A6>
+print("Enter principal, rate of interest and time to calculate compund interest and amount")
+p = float(input())
+r = float(input())
+t = float(input())
+a = p*pow((1+r),t)
+ci = a - p
+print("amount: {0:.2f} compund interest: {1:.2f}".format(a,ci))
+
+A7>
+print("enter a number")
+n =int(input())
+s = (n*(n+1))/2
+print("sum of n numbers is {}".format(s))
+
+A8>
+print("Enter two numbers a and b")
+a = float(input())
+b = float(input())
+x = a
+y = b
+a,b =b,a #pythonic way
+
+#using temp
+temp = x
+x = y
+y = temp
+
+print("a {0} b {1}".format(a,b))
+print("a {0} b {1}".format(a,b))
+
+A9>
+Dont know
+
+A10>
+print("Enter any character")
+c = input()[0]
+print(ord(c))
+
+

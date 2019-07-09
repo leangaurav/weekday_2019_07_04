@@ -1,0 +1,70 @@
+Q1: f = float(input('Enter temp. in Fahrenheit: '))
+    c = (f - 32) * (5 / 9)
+    print('Temp. in degree Celsius: ', c)
+    
+Q2: n = int(input("Enter number: "))
+    print("Square is: ", n * n)
+    print("Cube is: ", n * n * n)
+    
+Q3: n = int(input("Enter n: "))
+    m = int(input("Enter m: "))
+    print("Result: ", n * n + m * m)    
+    
+Q4: m = int(input("Enter M: "))
+    n = int(input("Enter N: "))
+    print("Result: ", m ** n)
+    print("Result: ", pow(m , n))     
+    
+Q5: p = float(input("Enter Principle Amount: "))
+    n = float(input("Enter time in years: "))
+    r = float(input("Enter rate: "))
+    i = p * n * r / 100
+    print("Simple interest: ", i)    
+    
+Q6: p = float(input("Enter Principle Amount: "))
+    t = float(input("Enter time in years: "))
+    r = float(input("Enter rate: "))
+    n = float(input("Enter number of times interest is compounded per year: "))
+    c = p * ((1 + r / n) ** (n * t))
+    print("Compound interest: ", c)    
+    
+Q7: n = int(input("Enter number: "))
+    print('Sum of first' , n , 'numbers is' , n * (n + 1) / 2)
+
+Q8: n = int(input("Enter 1st number: ")) #Pythonic
+    m = int(input("Enter 2nd number: "))
+    n, m = m, n 
+    print("n: ", n)
+    print("m: ", m)
+    
+    n = int(input("Enter 1st number: ")) #temp
+    m = int(input("Enter 2nd number: "))
+    tmp = n + m
+    n = tmp - n
+    m = tmp - m
+    print("n: ", n)
+    print("m: ", m)
+    
+Q9: print(ord('\t'))
+    print(ord('\n'))
+    print(ord('\v'))
+    print(ord('\f'))
+    print(ord('\r'))
+    print(ord(' '))    
+    
+Q10: c = input('Enter a single character: ')
+     print("ASCII: ", ord(c))    
+     
+Q11: from math import sqrt
+     a = float(input("Enter area of circle: "))
+     r = sqrt(a / 3.14)
+     c = 2 * 3.14 * r
+     print("Radius is: ", r)
+     print("Circumference is: ", c)
+     
+Q12: sub1 = float(input("Enter marks of subject 1: "))
+     sub2 = float(input("Enter marks of subject 2: "))
+     sub3 = float(input("Enter marks of subject 3: "))
+     sub4 = float(input("Enter marks of subject 4: "))
+     sub5 = float(input("Enter marks of subject 5: "))
+     print("Total percentage: ", (sub1 + sub2 + sub3 + sub4 + sub5) / 5)     
