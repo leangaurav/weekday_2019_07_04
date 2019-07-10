@@ -1,0 +1,63 @@
+A1: 6 19
+
+A2: s = input("Enter a string:")
+    print(len(s))
+    
+A3: s1 = input()
+    s2 = input()
+    print(int(s1)+int(s2))
+    print(int(s1)-int(s2))
+    
+A4: abde
+
+A5: abde
+
+A6: abababab
+
+A7: ab
+    ab
+    ab
+    ab
+    
+A8: s1 = input("")
+    s2 = int(input())
+    print((s1+'\n') * s2)  
+    
+A9: gaurav
+    None
+    
+A10: <class 'int'>
+
+A11: gaurav
+     tuteur.py@gmail.com
+     26
+    
+A12: math.sqrt()
+
+A13: import math
+     s1 = int(input())
+     print(math.sqrt(s1))
+     
+A14: s1 = int(input())
+     s2 = int(input())
+     s3 = int(input())
+     s4 = int(input())
+     print((s1+s2+s3+s4)/4)     
+     
+A15: help(abs)
+     Return the absolute value of the argument.
+
+A16: __main__
+
+A17: __main__
+
+A18: No
+
+A19: __main__
+     builtins
+     int
+     
+     
+     
+     
+     
