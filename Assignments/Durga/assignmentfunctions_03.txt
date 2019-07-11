@@ -64,4 +64,8 @@ A11: 2, -2
 
 A12: None
 
-A13: 
+A13: import cmath
+     x = int(input())
+     y = int(input())
+     z = complex(x, y)
+     print("re :", z.real, "im :", z.imag)
