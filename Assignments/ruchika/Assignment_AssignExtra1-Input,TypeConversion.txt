@@ -21,3 +21,64 @@ n,m=input('Enter n and m').split()
 num1=int(n)*int(n)
 num2=int(m)*int(m)
 print('The result: ', num1+num2)
+
+Ans-4
+n= float(input('Enter a number N:'))
+m= float(input('Enter a number M:'))
+print('The result of N^M is ', pow(n,m))
+print('The result of N^M is ', n**m)
+
+Ans-5
+p= float(input('Enter Principal:'))
+r= float(input('Enter Rate:'))
+t= float(input('Enter Time:'))
+print('The SI is ',(p*r*t)/100)
+
+Ans-6
+p= float(input('Enter Principal:'))
+r= float(input('Enter Rate:'))
+t= float(input('Enter Time:'))
+a = p * pow(1+r/100, t)
+ci= a-p
+print('The Amount is ',a)
+print('The CI is ',ci)
+
+Ans-7
+n= int(input('Enter a natural number:'))
+sum= int((n *(n+1))/2)
+print('The sum of first {0} natural numbers is {1} '.format(n,sum))
+
+Ans-8
+a,b= input('Enter 2 numbers:').split()
+a1,b1=b,a #Pythonic way
+print('In Pythonic way, values of a & b is ', a1,b1)
+temp=a;
+a=b
+b=temp;
+print('Using temp variable, values of a & b is ', a,b)
+
+Ans-9
+print('The ASCII value of white space character is ', ord(' '))
+
+Ans-10
+a= input('Enter a character :')
+a_num= ord(a)
+print('The ASCII value of {0} character is {1}'.format(a,a_num))
+
+Ans-11
+from math import sqrt
+area= float(input('Enter the area of the circle :'))
+radius=sqrt(int((area*7)/22))
+print('The Radius is {0}'.format(radius))
+circum= (2*22*radius)/7
+print('The Circumference of the circle is {0}'.format(circum))
+
+Ans-12
+sub1= float(input('Enter the marks of Subject 1 out of 100:'))
+sub2= float(input('Enter the marks of Subject 2 out of 100:'))
+sub3= float(input('Enter the marks of Subject 3 out of 100:'))
+sub4= float(input('Enter the marks of Subject 4 out of 100:'))
+sub5= float(input('Enter the marks of Subject 5 out of 100:'))
+percentage=((sub1+sub2+sub3+sub4+sub5)*100)/500
+print('The percenatge is:', percentage)
+
