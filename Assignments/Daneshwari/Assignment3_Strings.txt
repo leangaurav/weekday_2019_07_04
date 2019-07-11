@@ -1,0 +1,161 @@
+Ans1:
+
+s = 'Python is Object Oriented'
+print(s[-1])
+print(s[::-1])
+print(s[:-1])
+print(s[1:1])
+print(s[4:10])
+
+d
+detneirO tcejbO si nohtyP
+Python is Object Oriente
+
+on is
+
+----
+Ans2:
+
+s=''
+print(s[1])
+
+IndexError: string index out of range
+
+----
+Ans:3
+
+s='Gaurav'
+print(s[1])
+
+a
+
+----
+Ans 4:
+
+a.
+s='a b cd'
+print(len(s))
+print(len(s[::2]))
+print(s[::2])
+
+6
+3
+abc
+--
+b.
+s='a#b#c#d#'
+print(s.split())
+print(s.split('#'))
+l = s.split('#')
+s = '$'.join(l)
+print(s)
+
+['a#b#c#d#']
+['a', 'b', 'c', 'd', '']
+a$b$c$d$
+
+--
+c.
+s = 'Gaurav'
+s = s[::-2][::-2]
+print(s)
+
+av
+--
+d.
+print(1>2)
+
+False
+--
+e.
+print(4%2,5%2,2%5,sep=',')
+
+0,1,2
+--
+f.
+s='abcba'
+s.upper()
+print(s)
+print(s.count('A'),end=',')
+print(s.count('A',2,4),end=',')
+print(s.count('a',2,4),end=',')
+
+abcba
+0,0,0,
+----
+Ans:5
+
+s=str(input("Enter a string:"))
+print(s.replace(' ',''))
+
+Enter a string:jnsdn sdjahd
+jnsdnsdjahd
+
+----
+Ans:6
+
+[] empty array
+
+----
+Ans:7
+
+print(dir(__builtins__))
+
+----
+Ans 8 :
+help(str.rstrip(''))
+
+----
+Ans:9 a
+
+s="""*********
+    *
+    *
+    *
+    *"""
+print(s)
+
+----
+Ans:9 b
+
+s=""" 
+*     *
+* * * *
+*  *  *
+*     *
+"""
+print(s)
+
+----
+Ans:9 c
+
+s=""" 
+________
+    |   |
+    O   |
+  /   \ |
+    |   |
+  /   \ |
+________|
+"""
+print(s)
+
+----
+
+Ans:10
+
+s = str(input("Enter any string:"))
+print("Entered string is:",s)
+s=s.replace(' ','\n')
+print("After replacing space with new line:",s)
+
+----
+
+Ans:11
+fn = str(input("Enter first name:"))
+ln= str(input("Enter last name:"))
+print("First name and Last name is:",fn,ln)
+print("Length of",fn.upper(),"is",len(fn))
+print("Length of",ln.upper(),"is",len(ln))
+
+----
