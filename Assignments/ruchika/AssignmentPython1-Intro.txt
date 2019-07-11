@@ -1,0 +1,77 @@
+Ans-1
+6 19
+
+Ans-2
+str=input('Enter the string:')
+print('The length of the string is ',len(str))
+
+Ans-3
+num1,num2 =input('Enter the two numbers:').split( )
+print('The sum of two numbers are: ',int(num1)+int(num2))
+print('The difference of two numbers are: ',int(num1)-int(num2))
+
+Ans-4
+abde
+
+Ans-5
+abde
+
+Ans-6
+abababab
+
+Ans-7
+ab
+ab
+ab
+ab
+
+Ans-8
+strOrig=input('Enter the string:')
+n=int(input('Enter the number:'))
+print('String ',strOrig, ' is printing  ',n, ' times on the screen')
+newStr= strOrig +'\n'
+print(newStr * n)
+
+Ans-9
+Gaurav
+
+Ans-10
+<class 'int'>
+
+Ans-11
+<class 'str'>
+25
+
+Ans-12
+math.sqrt()
+
+Ans-13
+import math
+num= int(input('Enter a number'))
+math.sqrt(num)
+
+Ans-14
+num1,num2,num3,num4= input('Enter 4 numbers').split( )
+total= int(num1)+ int(num2) + int(num3)+ int(num4)
+print('The average of four numbers is: ', total/4)
+
+Ans-15
+help>  abs
+Help on built-in function abs in module builtins:
+
+abs(x, /)
+    Return the absolute value of the argument.
+	
+Ans-16
+__main__
+
+Ans-17
+__main__
+
+Ans-18
+N
+
+Ans-19
+__main__
+builtins
+int
