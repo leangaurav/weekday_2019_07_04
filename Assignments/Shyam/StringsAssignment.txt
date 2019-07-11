@@ -1,0 +1,67 @@
+Q1: s[-1] = 'd'
+    s[::-1] = 'detneiro tcejbo si nohtyP'
+    s[:-1]  = 'Python is object oriente'
+    s[1:1]  = ' '
+    s[4:10] = 'on is '
+   
+Q2: index out of range   
+
+Q3: Yes. Variable name is capital S but small s is used in print function
+
+Q4a: 6
+     abc
+     3
+Q4b: ['a#b#c#d#']
+     ['a', 'b', 'c', 'd', '']
+     a$b$c$d$     
+Q4c: av
+Q4d: False
+Q4e: 0, 1, 2
+Q4f: abcba
+     0 ,0 ,0 ,
+
+Q5: s = input("Enter string: ")
+    print(s.replace(' ', ''))
+
+Q6: Empty list
+
+Q7: print(dir(str))
+
+Q8: "rstrip" in dir(str)
+
+Q9: s = """
+        *****
+          *
+          *
+          *
+          *"""
+    print(s)
+    
+    s = """
+        *     *
+        * * * * 
+        *  *  *
+        *     *"""
+    print(s)
+    s = """
+        ________
+         |      |
+         o      |
+        /|\     |
+        / \     |
+        ________|"""
+     print(s)  
+     
+Q10: s = input("Enter string: ")
+     print(s.replace(' ', '\n'))
+     
+Q11: s = input("Enter first and last name seperated by space: ")
+     sp = s.split(' ')
+     print("First name: ", sp[0], "-", "Length: ", len(sp[0]))
+     print("Last name: ", sp[1], "-", "Length: ", len(sp[1]))     
+
+Q12: s = input("Enter string: ")
+     s1 = s[:int(len(s)/2)]   
+     s2 = s[int(len(s)/2):]
+     print("First half:", s1)
+     print("Second half:", s2)
