@@ -1,0 +1,100 @@
+1)
+def f2c(f):
+    print ((f-32)*5/9)
+
+f2c(98)
+       
+	   
+	   
+2)
+def printsqandcube(x):
+    print("Square = ", x**2)
+    print("Cube = ", x**3)
+
+printsqandcube(3)
+
+
+3)
+def sumofexpression(n,m):
+    print("value is ...: ", (n**2) +(m**2))
+
+sumofexpression(2, 3)
+
+
+4) 
+def sumofexpression(m,n):
+    print("value is ...:", (m**n))
+    print("using POW ..:",  int.__pow__(m,n))
+
+sumofexpression(2, 3)
+
+5) 
+def calcinterest(p,r,t):
+    print("Interest is ...:", (p*r*t)/100)
+
+calcinterest(1000,8,1)
+
+
+6)
+def compundinterest(p,r,t):
+    totamount= p*((1+(r/100))**t)    
+    interest = totamount - p
+    print("CI ..:",  interest)
+    print("Total Amount ..:",  totamount)
+
+compundinterest(100,8,3)
+
+7) 
+def sumuptonum(n):
+    sum=0
+    for i in range (n+1):
+        sum=sum+i
+    print(sum)
+    
+  
+num = input("Enter the number ...:")
+sumuptonum(int(num))
+
+
+8)
+def swapnums(x,y):
+    temp=x
+    x=y
+    y=temp
+    print(x, y)
+    
+swapnums(2,3)
+
+pythonic way:
+================
+def swapnums(x,y):
+    x,y =  y, x
+    print(x, y)
+    
+swapnums(2,3)
+
+
+9) << need to understand this in detials >>
+
+
+10) << need to understand this in detials >>
+
+
+
+11)
+def radiusandcircumf(a):
+    radius = (a*7/22)**0.5
+    circumfer = 2*22/7*radius
+    print(radius, circumfer)
+    
+radiusandcircumf (100)
+
+
+11)
+def percent(s1,s2,s3,s4,s5):
+    total =s1+s2 +s3+s4+s5
+    percentage = (total/500)*100
+    print (percentage)
+    
+percent (50,60,70,80,90)
+
