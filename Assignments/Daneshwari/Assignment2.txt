@@ -1,0 +1,110 @@
+Ans-1.
+
+temp = int(input("Enter the temperature in Fahrenheit:"))
+print("Converted temperature in Celsius is:",(temp-32)*(5/9))
+
+Enter the temperature in Fahrenheit:33
+Converted temperature in Celsius is: 0.5555555555555556
+----
+Ans-2:
+
+num = int(input("Enter a num:"))
+print("square root of",num , "is:",num**(.5))
+print("cube root of", num , "is:", num**(1./3.))
+
+Enter a num:4
+square root of 4 is: 2.0
+cube root of 4 is: 1.5874010519681994
+----
+Ans-3:
+n = int(input("Enter the num n:"))
+m = int(input("Enter the num m:"))
+o = (n**2)+(m**2)
+print("Sum of Square roots of n and m is:",o)
+
+Enter the num n:2
+Enter the num m:2
+Sum of Square roots of n and m is: 8
+----
+Ans-4
+import math
+n = int(input("Enter the num n:"))
+m = int(input("Enter the num m:"))
+res = (m**n)
+res1 = pow(m,n)
+print("res of (m**n) is:",res)
+print("res of pow is:",res1)
+
+Enter the num n:3
+Enter the num m:3
+res of (m**n) is: 27
+res of pow is: 27
+----
+Ans-5:
+P = int(input("Enter the Principal amount:"))
+T = int(input("Enter the Time(years):"))
+R = int(input("Enter the Rate:"))
+SI= (P*T*R)/100
+print("The Simple intrest is:",SI)
+
+Enter the Principal amount:200
+Enter the Time(years):5
+Enter the Rate:5
+The Simple intrest is: 50.0
+
+----
+Ans-6:
+import math
+P = float(input("Enter the Principal amount:"))
+R = float(input("Enter the Rate:"))
+T = float(input("Enter the Time(years):"))
+CI= P *(math.pow((1+R/100),T))
+Compound_Intrest = CI - P
+print("The Compond intrest is:",Compound_Intrest)
+print("The amount is:" , P)
+
+Enter the Principal amount:500000
+Enter the Rate:12.5
+Enter the Time(years):7
+The Compond intrest is: 640348.6728668213
+The amount is: 500000.0
+----
+Ans-7:
+n = int(input("Enter a number:"))
+s = (n*(n+1))/2
+print("sum of" ,n,"natural number is {}".format(s))
+
+Enter a number:4
+sum of 4 natural number is 10.0
+----
+Ans-8:
+swapping using Pythonic way:
+
+a = int(input("Enter num a:"))
+b = int(input("Enter num b:"))
+x= a,b = b,a
+print("Swapping of two numbers using pythonic way:",x )
+
+Enter num a:4
+Enter num b:5
+Swapping of two numbers using pythonic way: (5, 4)
+
+Temp variable way:
+
+x = int(input("Enter num x:"))
+y = int(input("Enter num y:"))
+t = x;
+x = y;
+y = t;
+print("After swapping using temp", x, y);
+
+Enter num x:4
+Enter num y:5
+After swapping using temp 5 4
+
+------
+
+
+
+
+
