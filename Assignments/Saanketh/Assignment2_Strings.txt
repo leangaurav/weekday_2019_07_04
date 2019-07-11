@@ -73,7 +73,9 @@ print(dir(str))
 
 #Solution 8
 
-***Pending. Will be updated soon***
+print(dir(str))
+"rstrip" in dir(str)
+print("True" if True else "False")
 
 ==============================================================================================
 
