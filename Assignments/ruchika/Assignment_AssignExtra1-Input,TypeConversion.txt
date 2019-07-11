@@ -1,0 +1,23 @@
+Ans-1
+def convertFahtoCel(Fah):
+	Cel=(Fah - 32) * (5/9)
+	print('Temperature in Celsius: ',Cel)
+convertFahtoCel(50)
+
+Ans-2
+def square(n):
+	square=n*n
+	print('The square of {0} is {1}'.format(n,square))
+def cube(n):
+	cube=n*n*n
+	print('The cubeof {0} is {1}'.format(n,cube))
+
+n=int(input('Enter a number:'))
+square(n)
+cube(n)
+
+Ans-3
+n,m=input('Enter n and m').split()
+num1=int(n)*int(n)
+num2=int(m)*int(m)
+print('The result: ', num1+num2)
