@@ -1,0 +1,119 @@
+A1: s = "python is object oriented"
+    print(s[-1]) 
+    print(s[::-1])
+    print(s[:-1])
+    print(s[1:1])
+    print(s[4:10])
+    
+    Output:
+    d
+    detneiro tcejbo si nohtyp
+    python is object oriente
+
+    on is 
+    
+A2: string index out of range
+
+A3: a
+
+A4: a)  s ="a b cd"
+        print(len(s))
+        print(s[::2])
+        print(len(s[::2]))
+            
+        output: 6
+                abc
+                3
+                
+    b)  s = "a#b#c#d#"
+        print(s.split())
+        print(s.split('#'))
+        l = s.split('#')
+        s = '$'.join(l)
+        print(s) 
+        
+        output: ['a#b#c#d#']
+                ['a', 'b', 'c', 'd', '']
+                ['a', 'b', 'c', 'd', '']
+                a$b$c$d$
+                
+    c)  s = "gaurav"
+        s = s[::-2][::-2]
+        print(s) 
+        
+        output: av
+        
+    d)  false
+    
+    e)  0,1,2
+    
+    f)  s = "abcba"
+        s = s.upper()
+        print(s)
+        print(s.count('A'), end=",")
+        print(s.count('a',2,4), end=",")
+        print(s.count('a',2,4), end=",")
+                
+                
+        output: ABCBA
+                2,0,0,
+                
+A5: s = "a b c d"
+    print(s.replace(" ", ""))     
+    
+A6: list
+
+A7: print(dir(str))
+
+A8: "rstrip" in dir(str)
+
+A9: a) s = """       
+        *****
+          *
+          *
+          *
+          *"""
+        print(s)
+        
+     b) s = """
+        *     *
+        * * * *
+        *  *  *
+        *     *"""
+        print(s) 
+                
+     c) s = """
+        ________
+         |      |
+         o      |
+        /|\     |
+        / \     |
+        ________|
+        """
+        print(s)   
+        
+A10: s = "a b c d"
+     print(s.replace(" ","\n"))      
+     
+A11: f = input("Firstname is :")
+     l = input("Lastname is :")
+     print(f, l, sep = " ")
+     print(f.upper(), len(f))
+     print(l.upper(), len(l))    
+     
+A12: s = "string"
+     s1 = s[:int(len(s)/2)]
+     s2 = s[int(len(s)/2):]
+     print("s1 :", s1)
+     print("s2 :", s2)     
+        
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
