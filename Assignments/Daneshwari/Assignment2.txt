@@ -105,6 +105,47 @@ After swapping using temp 5 4
 ------
 
 
+Ans:9
+print(ord('\t'))
+print(ord('\n'))
+print(ord('\r'))
+
+9
+10
+13
+
+----
+Ans:10
+
+a = str(input("Enter any character to print its ascii value:"))
+print(ord(a))
+
+Enter any character to print its ascii value:w
+119
+----
+Ans:11
+
+from math import sqrt
+area = float(input("Enter the area of circle:"))
+r = sqrt(area / 3.14)
+c = 2 * 3.14 * r
+print("Radius of the circle is:", r)
+print("Circumference of the circle is:", c)
+
+Enter the area of circle:2
+Radius of the circle is: 0.7980868844676221
+Circumference of the circle is: 5.011985634456667
+
+----
+Ans:12
+s1 = float(input("Enter marks in sub1:"))
+s2 = float(input("Enter marks in sub2:"))
+s3 = float(input("Enter marks in sub3:"))
+s4 = float(input("Enter marks in sub4:"))
+s5 = float(input("Enter marks in sub5:"))
+result = (s1+s2+s3+s4+s5)/500*100
+print("Percentage of 5 subjects is:",result,"%")
+
 
 
 
