@@ -1,0 +1,105 @@
+Fahrenheit = float(input("Enter a temperature in Fahrenheit: "))
+Celsius = (Fahrenheit - 32) * 5.0/9.0
+print("Temperature:", Fahrenheit, "Fahrenheit = ", Celsius, " C")
+Enter a temperature in Fahrenheit: 25.5
+Temperature: 25.5 Fahrenheit =  -3.611111111111111  C
+
+# python program to find square and cube
+def square (num):
+    return  (num*num)
+def cube (num) :
+    return  (num*num*num) 
+number = int (input("Enter an integer number: "))
+# square and cube
+print ("square of {0} is {1}".format(number, square(number)))
+print ("Cube of {0} is {1}".format(number, cube (number)))
+Enter an integer number: 9
+square of 9 is 81
+Cube of 9 is 729
+
+n = int(input("Enter a number: "))
+m = int(input("Enter a number: "))
+print((n*n) + (m*m))
+Enter a number: 4
+Enter a number: 5
+41
+
+n = int(input("Enter a number: "))
+m = int(input("Enter a number: "))
+print(m**n)
+Enter a number: 4
+Enter a number: 2
+16
+
+print(pow(2,4))
+16
+
+P = float(input("Enter the principal amount : "))
+N = float(input("Enter the number of years : "))
+R = float(input("Enter the rate of interest : "))
+#2
+SI = (P * N * R)/100
+print("Simple interest : {}".format(SI))
+Enter the principal amount : 10000
+Enter the number of years : 10
+Enter the rate of interest : 2
+Simple interest : 2000.0
+
+def CI(principle, rate, time):
+    result = principle * (pow((1 + rate / 100), time))
+    return result
+p = float(input("Enter the principal amount: "))
+r = float(input("Enter the interest rate: "))
+t = float(input("Enter the time in years: "))
+interest = CI(p, r, t)
+print("Compound interest is %.2f" % interest)
+Enter the principal amount: 100000
+Enter the interest rate: 12
+Enter the time in years: 5
+Compound interest is 176234.17
+
+#swap values in pythonic way
+x = 10
+y = 40
+x,y = y,x #tuple 
+print(x,y)
+40 10
+
+#print ascii value
+print(ord('A'))
+print(ord('a'))
+print(ord(' '))
+65
+97
+32
+
+# area of circle and find radius and circumference
+import math
+PI = 3.14
+area = float(input(' Please Enter the area of a circle: '))
+#area = PI * radius * radius
+radius = math.sqrt(area/PI)
+circumference = 2 * PI * radius
+#radius = (Diameter/2)
+print(" radius Of a Circle = %.2f" %radius)
+print(" Circumference Of a Circle = %.2f" %circumference)
+
+Please Enter the area of a circle: 314
+radius Of a Circle = 10.00
+Circumference Of a Circle = 62.80
+
+#Input 5 subjects marks out of 100 and then print percentage
+s1 = int(input("Enter a number:"))
+s2 = int(input("Enter a number:"))
+s3 = int(input("Enter a number:"))
+s4 = int(input("Enter a number:"))
+s5 = int(input("Enter a number:"))
+
+percentage = ((s1 + s2 + s3 + s4 + s5)/500)*100
+print(percentage)
+Enter a number:80
+Enter a number:60
+Enter a number:75
+Enter a number:90
+Enter a number:85
+78.0
