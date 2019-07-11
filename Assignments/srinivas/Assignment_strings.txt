@@ -1,0 +1,141 @@
+s = 'Python is Object Oriented'
+print(s[-1])
+print(s[::-1])
+print(s[:-1])
+print(s[1:1])
+print(s[4:10])
+Ans:
+d
+detneirO tcejbO si nohtyP
+Python is Object Oriente
+
+on is
+
+s = ''
+print(s[1])
+Ans:
+IndexError                                Traceback (most recent call last)
+<ipython-input-2-c803f0c3658b> in <module>
+      1 s = ''
+----> 2 print(s[1])
+
+IndexError: string index out of range
+
+s = 'Gaurav'
+print(s[1])
+Ans:a
+
+s = 'a b cd'
+print(len(s))
+print(s[::2])
+print(len(s[::2]))
+Ans:
+6
+abc
+3
+
+s = 'a#b#c#d#'
+print(s.split())
+print(s.split('#'))
+l = s.split('#')
+s = '$'.join(l)
+print(s)
+Ans:
+['a#b#c#d#']
+['a', 'b', 'c', 'd', '']
+a$b$c$d$
+
+S = 'abcdef'
+S = S[::-2][::-2]
+print(S)
+Ans:bf
+
+print(1>2)
+False
+
+print(4%2, 5%2, 2%5, sep = ' , ')
+Ans:0 , 1 , 2
+
+s='abcba'
+s.upper()
+print(s)
+print(s.count('A'), end = ' ,')
+print(s.count('A', 2,4) , end = ' ,')
+print(s.count('a', 2,4) , end = ' ,')
+Ans:
+abcba
+0 ,0 ,0 ,
+
+[] # denotes array
+
+print(dir(__builtins__))
+
+s="""*********
+    *
+    *
+    *
+    *"""
+print(s)
+Ans:
+*********
+    *
+    *
+    *
+    *
+
+s=""" 
+*     *
+* * * *
+*  *  *
+*     *
+"""
+print(s)
+Ans:
+*     *
+* * * *
+*  *  *
+*     *
+
+s=""" 
+________
+    |   |
+    O   |
+  /   \ |
+    |   |
+  /   \ |
+________|
+"""
+print(s)
+Ans:
+________
+    |   |
+    O   |
+  /   \ |
+    |   |
+  /   \ |
+________|
+
+s = str(input("Enter any string:"))
+print("Entered string is:",s)
+s=s.replace(' ','\n')
+print("After replacing space with new line:",s)
+Ans:
+Enter any string:she is a artist
+Entered string is: she is a artist
+After replacing space with new line: she
+is
+a
+artist
+
+fn = str(input("Enter first name:"))
+ln= str(input("Enter last name:"))
+print("First name and Last name is:",fn,ln)
+print("Length of",fn.upper(),"is",len(fn))
+print("Length of",ln.upper(),"is",len(ln))
+Ans:
+Enter first name:Kolluru
+Enter last name:Srinivas
+First name and Last name is: Kolluru Srinivas
+Length of KOLLURU is 7
+Length of SRINIVAS is 8
+
