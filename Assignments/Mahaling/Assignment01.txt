@@ -1,0 +1,58 @@
+Q1 -->  (6, 19)
+
+Q2 -->  s1 = input("Please Enter a string: ")
+	print("The length of the string is: ", len(s1)
+
+Q3 -->	a = int(input("Please enter value of a: "))
+	b = int(input("Please enter value of b: "))
+	print("The sum of a and b is: ", a + b)
+	print("The difference of a and b is: ", a - b)
+
+Q4 --> 'abde'
+
+Q5 --> 'abde'
+
+Q6 --> abababab
+
+Q7 --> ab
+       ab
+       ab
+       ab
+
+Q8 -->	s1 = input("Please enter a string: ")
+	n = int(input("Please enter a number: "))
+	print((s1 + '\n') * n)
+
+Q9 --> None
+
+Q10 -->	<class 'int'>
+
+Q11 -->	<class 'str'>
+	28
+
+Q12 -->	math.sqrt()
+
+Q13 --> import math
+	a = int(input("Enter a number: "))
+	print("The square root of the entered number is: ", math.sqrt(a))
+
+Q14 --> a = int(input("Enter value of a: "))
+	b = int(input("Enter value of b: "))
+	c = int(input("Enter value of c: "))
+	d = int(input("Enter value of d: "))
+
+	avg = (a+b+c+d)/ 4
+
+	print("The average of entered number is: ", avg )
+
+Q15 --> help(abs)
+
+Q16 --> __main__
+
+Q17 --> __main__
+
+Q18 --> No
+
+Q10 --> __main__
+	builtins
+	int

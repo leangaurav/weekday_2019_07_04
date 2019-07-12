@@ -1,0 +1,72 @@
+Q1 -->	temp_F = input("Enter the temperature in Fahrenheit: ")
+
+	norm_F = float(temp_F)
+
+	temp_C = (norm_F - 32) * (5 /9)
+
+	print("The temperature in Celcius is: ", temp_C)
+
+
+Q2 -->	Num1 = int(input("Enter a number: "))
+
+	print("The square of the entered number is: ", Num1 ** 2)
+	print("The cube of the entered number is: ", Num1 ** 3)
+	
+	=============================================================
+	import random as rn
+	a = rn.randint(1, 100000)
+	print("The square of the entered number is: ", a ** 2)
+	print("The cube of the entered number is: ", a ** 3)
+
+
+Q3 --> 	n = int(input("Enter the value of n: "))
+	m = int(input("Enter the value of m: "))
+
+	print("The sum of squares of n and m is: ", ((n**2)+ (m**2)))
+
+Q4 --> 	n = int(input("Enter the value of n: "))
+	m = int(input("Enter the value of m: "))
+
+	print("The value of m raised to the power n is: ", (m ** n))
+	print("The value of m raised to the power n is: ", pow(m, n))
+
+Q5 --> 	principal = input("Enter principal amount: ")
+	time = input("Enter time period in years: ")
+	rate = input("Enter rate of interest per annum: ")
+
+	p = float(principal)
+	t = float(time)
+	r = float(rate)
+
+	Simple_Interest = (p*t*r) / 100
+
+	print("The Simple Interest is: ", Simple_Interest)
+
+Q6 --> 	principal = input("Enter principal amount: ")
+	time = input("Enter time period in years: ")
+	rate = input("Enter rate of interest per annum: ")
+
+	p = float(principal)
+	t = float(time)
+	r = float(rate)
+
+	Amount = p* ((1+ (r/100)) ** n)
+	compInterest = Amount - p
+
+	print("The compound interest is: ", compInterest)
+	print("The amount is: ", Amount)
+
+Q7 --> 	n = int(input("Enter a number: "))
+	print("The sum of 1st n natural numbers is: ", ((n*(n+1))/2))
+
+Q8 --> a = 10
+	b = 20
+
+	temp = a
+	a = b
+	b = temp
+
+	print(a)
+	print(b)
+
+Q9 --> 
