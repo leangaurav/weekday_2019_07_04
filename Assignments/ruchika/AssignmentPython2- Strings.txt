@@ -1,0 +1,98 @@
+Ans-1
+i. d
+ii. detneirO tcejbO si nohtyP
+iii. Python is Object Oriente
+iv.
+v. on is
+
+Ans-2
+IndexError: string index out of range
+
+Ans-3 
+a
+
+Ans-4
+a)
+6
+abc
+3
+
+b)
+['a#b#c#d#']
+['a', 'b', 'c', 'd', '']
+a$b$c$d$
+
+c)
+av
+
+d)False
+
+e)
+0,1,2
+
+f)
+abcba
+0,0,0,
+
+Ans-5
+str=input('Enter a string!!')
+new_str=str.replace(' ','')
+print('The string after removing white spaces: ',new_str)
+
+Ans-6 An object of list.
+
+Ans-7
+def to_print_methods(object):
+    print(dir(object))
+
+to_print_methods('str')
+
+Ans-8
+'rstrip' in dir(str)
+
+Ans-9
+str1='''
+*****   
+  *
+  *
+  *
+  *
+
+'''
+str2='''
+*      *
+* *  * *
+*   *  *
+*      *
+'''
+
+str3='''
+___________
+ |         |
+ o         |
+/|\        |
+/ \        |
+           |
+___________|           
+'''
+
+final_str=str1+ str2+str3
+print(final_str)
+
+Ans-10
+str=input('Enter a string!')
+new_str=str.replace(' ','\n')
+print('The value after replacing spaces with new line is ', new_str)
+
+Ans-11
+f_name,l_name=input('Enter firstname and last name separted by space :').split(' ')
+print('First name', f_name, len(f_name), f_name.upper())
+print('Last name', f_name, len(l_name), l_name.upper())
+
+
+Ans-12
+str=input('Enter a string')
+div_index=int(len(str)/2)
+print(div_index)
+print(str[:div_index])
+print(str[div_index:])
