@@ -1,0 +1,178 @@
+# 1) Convert a Tuple t = (1,2,3,4,5) to a list
+# =============================================
+t=(1,2,3,4,5)
+mylist = list(t)
+print(mylist)
+
+
+# 2) WAP to join a list and a tuple:
+#    ===================================
+L = [1,3,5,7]
+T = (8,6,4,2)
+LS = []
+LS.extend(L)
+LS.extend(T)
+print(LS)
+
+
+# 3) List is mutable. Content of List can be modified
+# Tuple is Immutable. Content of List can be modified
+
+
+# 4) Print the list in reverse order
+#    l = [‘a’, ‘d’, ‘c’, ‘A’, ‘C’]
+# ================================
+
+lst =  ['a','d', 'c','A','C']
+print(lst)
+
+revLst2 = lst[::-1]        # creating another list out of orig list
+print(revLst2)
+
+lst.reverse()              # Orig- LIST itself gets modified  reverse
+print(lst)
+
+
+
+# 5) Print Elements at Odd indexes from a list (Do not use loop)
+# l = [10,11,20, 21,30, 31, 40, 41]
+# ==================================
+
+lst = [10,11,20, 21,30, 31, 40, 41]
+print(lst[0::2])
+
+
+
+# 6) How many ways you can copy a list.
+# ====================================
+lst1 =  [10,11,20, 21,30, 31, 40, 41]
+lst2 = lst1.copy()    # Type-1
+
+print(lst1, id(lst1)) 
+print(lst2, id(lst2)) # ID of lst2 != lst1
+
+lst3 = lst1            # TYpe -2
+print(lst3, id(lst3)) # ID of lst3 = lst1     
+
+lst4 = lst1[::]       # type -3
+print(lst4, id(lst4)) # ID of lst4 != lst1
+
+
+# 7) Predict output
+# ==================
+n_list1 = ['Happy',  [2,0,1,5] ]
+print(n_list1[0][1] )     #  WHy is a retuened ? "Happy" is just 1 ITEM in the list ?
+print(n_list1[1][3] )
+
+# 8) Predict output
+# ==================
+odd = [2,4,6,8]
+odd[0] =1           # [1,4,6,8]
+print(odd)
+
+odd[1:4] = [3,5,7 ]  # [1,3,5,7 ]
+print(odd)
+
+
+
+# 9) Predict output
+odd = [1,3,5]
+odd.append( [7,9] )           # [1,4,6,8,  [7,9 ] ]
+print(odd)
+odd.extend( [11, 13] )         # [1,4,6,8,  [7,9 ],   11, 13 ]
+print(odd)
+
+
+# 10) Predict output
+x= 1,2,3 ;    print(type(x), x )    # default constructor makes x as TUPLE
+x = (1)  ;    print(type(x), x )
+x =  1   ;    print(type(x), x )
+x = '1'  ;    print(type(x), x )
+x = (1,)  ;   print(type(x), x )
+
+
+
+# 11) Try to represent a matrix with following data in python:
+#
+# 1 2 3
+# 4 5 6
+# 7 8 9
+# ==========================
+matrx  = [[1, 2, 3] , [4, 5 ,6 ], [7, 8, 9 ]]
+
+for item in matrx :
+    for subitm in item:
+        print (subitm)
+		
+		
+# 12) Predict output
+# ==========================
+
+t1 = tuple ('String')
+t3 = t1 + t2
+
+
+Ouptut:  name 't2' is not defined
+
+
+# 13) Predict output
+# ====================
+
+t = tuple ('String')
+print(t)
+print( t[::-1] )
+print( t[::2][::-2])
+
+
+# 14) Predict output
+#
+# ==========================
+
+t3 =  (10,)
+print(t, type(t))
+
+t3 = tuple( [10,20,30,40,50,60 ])	
+print(60 in t3)				# True
+print (int(10 in t3 ))      # 1        		       
+print (int(1 in t3 ))		# 0
+
+
+#  15) Write a program to input a string and print if it is palindrome or not.
+#  ======================================================================
+#
+s1 = input( "enter the string .. :")
+lst = ( s1.lower() )
+revLst = lst[::-1]
+print ( lst,     id(lst) )
+print ( revLst , id(revLst))
+
+print( "is_palindrome =", lst == revLst)
+
+
+# 16) Use the range method and create a tuple containing the following values: (20, 15, 10, 5)
+# ==========================
+
+tup  = tuple(range(20,0,-5))
+print( tup)
+
+
+
+# 17) WAP to convert string to list of characters.
+# ================================================
+
+myLst =  list("Learning Python")
+print(myLst)
+
+
+# 18) What is the return type of:
+# ==============================
+
+print( type('1 2'. split()  ))        # List
+print( type([1,3,2]         ))        # List
+print( type([1,3,2].sort()  ))        # None becos INPOUt given to TYPE is "None" ie. its s IN-LIST sorting
+print( type('abc.upper()')   )        # str
+print( type(1 in [1,2] )     )        # bool
+print( type(None) )  
+
+
+		
