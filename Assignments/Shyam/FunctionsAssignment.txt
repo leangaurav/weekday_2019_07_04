@@ -1,0 +1,131 @@
+Q1: s1 = input("Enter string 1: ")
+    s2 = input("Enter string 2: ")
+    s1, s2 = s2, s1
+    print("String 1: ", s1)
+    print("String 2: ", s2)
+    
+Q2: from random import randrange
+    a = randrange(0, 27)
+    b = randrange(0, 27)
+    c = randrange(0, 27)
+    d = randrange(0, 27)
+    avg = (a + b + c + d) / 4
+    print(a, b, c, d, avg)
+    
+Q3: import random
+    s = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    r = random.randint(0 , len(s))
+    print(s[r])     
+
+Q4: def get_si(p, r, t):
+    si = p * r * t / 100
+    return si
+    i = get_si(1000, 5, 2)
+    print(i)
+
+Q5: p = int(input("Enter principal amount: "))
+    def get_si(p, r = 10, t = 1):
+        si = p * r * t / 100
+        return si
+    i = get_si(1000)
+    total = p + i
+    print(total)
+
+Q6: def get_ci(p, r, t):
+      ci = p * (((1 + r / 100) ** t) - 1)
+      return ci
+    c = get_ci(1000, 10, 5)
+    print(c)
+
+Q7: n = int(input("Enter n: "))
+    m = int(input("Enter m: "))
+    t = ()
+    def get_q_r(n , m):
+        t = (n / m , n % m)
+        return t
+    t = get_q_r(n , m)
+    print(t)    
+
+Q8: from math import sqrt
+    h = int(input("Enter height of triangle: "))
+    b = int(input("Enter base of triangle: "))
+    def hypo(h , b):
+      hyp = sqrt(h ** 2 + b ** 2)
+      return hyp
+    hy = hypo(h , b)
+    print(hy)
+
+Q9: s = int(input("Enter number of seconds: "))
+    d = int(s / 86400)
+    h = int((s % 86400) / 3600)
+    m = int((s % (86400 * 3600)) / 60 )
+    s = int((s % (86400 * 3600 * 60)) / 60)
+    print(d, "Days", h, "Hours", m, "Minutes", s, "Seconds")
+
+Q10: Python 3.7.3 (After typing ‘python’ in terminal)
+
+Q11: 1 -1
+
+Q12: None
+
+Q13:  r = int(input("Enter real part of the complex number: "))
+      im = int(input("Enter imaginary part of the complex number: "))
+      print("re:", r, "im:", im)
+
+Q14: def input_complex():
+        r = int(input("Enter real part of the complex number: "))
+        im = int(input("Enter imaginary part of the complex number: "))
+        return r , im
+
+    def print_complex(re , img):
+        print("re:", r, "im:", im)
+    t = input_complex()
+    print_complex(t[0], t[1])
+
+Q15: def input_complex():
+        r1 = int(input("Enter real part of 1st complex number: "))
+       im1 = int(input("Enter imaginary part of 1st complex number: "))
+        r2 = int(input("Enter real part of 2nd complex number: "))
+        im2 = int(input("Enter imaginary part of complex number: "))
+        return r1, r2, im1, im2
+    
+    def add(ra1, ima1, ra2, ima2):
+       return ra1 + ra2, ima1 + ima2
+
+    def sub(rs1, ims1, rs2, ims2):
+        return rs1 - rs2, ims1 - ims2
+
+    r1, r2, im1, im2 = input_complex()
+    addt = add(r1, im1, r2, im2)
+    subt = sub(r1, im1, r2, im2)
+    print("Sum: ", addt)
+    print("Sub: ", subt)
+
+Q16: def input_complex():
+        r1 = int(input("Enter real part of 1st complex number: "))
+        im1 = int(input("Enter imaginary part of 1st complex number: "))
+        r2 = int(input("Enter real part of 2nd complex number: "))
+        im2 = int(input("Enter imaginary part of complex number: "))
+        return r1, r2, im1, im2
+    
+    def add(ra1, ima1, ra2, ima2):
+        return ra1 + ra2, ima1 + ima2
+
+    def sub(rs1, ims1, rs2, ims2):
+        return rs1 - rs2, ims1 - ims2
+  
+    def mul(rm1, imm1, rm2, imm2):
+        return rm1 * rm2, imm1 * imm2
+
+    def div(rd1, imd1, rd2, imd2):
+       return rd1 / rd2, imd1 / imd2
+
+    r1, r2, im1, im2 = input_complex()
+    addt = add(r1, im1, r2, im2)
+    subt = sub(r1, im1, r2, im2)
+    mult = mul(r1, im1, r2, im2)
+    div = div(r1, im1, r2, im2)
+    print("Sum: ", addt)
+    print("Sub: ", subt)
+    print("Mult: ", mult)
+    print("Div: ", div)
