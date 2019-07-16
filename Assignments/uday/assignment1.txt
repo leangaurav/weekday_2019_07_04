@@ -1,0 +1,129 @@
+1.Predict Output
+
+  output: 6 19
+
+2.WAP to input a string and print its length.
+       str1 = input("enter the string:")
+       print(len(str1))
+
+  output:   enter the string:uday
+            4
+
+3.WAP to input 2 numbers and print their sum and difference.
+       n1 = int(input("enter the number:"))
+       n2 = int(input("enter the number:"))
+       sumof = n1+n2
+       diff=n1-n2
+       print('sum of the {0} and {1} is {2} difference of the {0} and {1}  is {3}'.format       (n1,n2,sumof,diff))
+
+   output:  enter the number:11
+            enter the number:7
+            sum of the 11 and 7 is 18 difference of the 11 and 7  is 4
+
+4.Predict output:
+
+  output:  abde
+
+5.Predict output:
+
+  output: abde
+
+
+6.Predict output:
+
+  output: abababab
+
+7.Predict output:
+
+  output: ab
+          ab
+          ab
+          ab 
+
+
+
+8.WAP to input a string s and a number n. Print the string n times on the screen, each   should appear in a separate line (do not use any kind of loops, use the multiplication   operator).
+ 
+       s = input("enter the string:")
+       n  = int(input("enter the number:"))
+       print((s + '\n')*n)
+   
+  output:
+
+          enter the string:uday
+          enter the number:5
+          uday
+          uday
+          uday
+          uday
+          uday
+
+
+
+
+
+9.Predict output:
+ 
+  output:
+           Gaurav
+           None
+
+10.Predict Output 
+
+   output:
+          <class 'int'>
+
+11.Predict Output  
+     
+   output:
+           <class 'str'>
+            26  
+    
+    
+12.Find the name of function to find the square root. (see all the options available in dir   () of builtins)
+  
+    output:
+            math.sqrt()
+
+13.WAP to input a number and print its square root ().
+    
+   
+          import math
+          s1 = int(input("enter the number:"))
+          print(math.sqrt(s1))
+     
+14.WAP to input 4 numbers from user and print their average
+ 
+            s1 = int(input())
+            s2 = int(input())
+            s3 = int(input())
+            s4 = int(input())
+            print((s1+s2+s3+s4)/4)     
+     
+15.Use the help function to check what the abs function in python does. 
+   
+   output:
+
+     help(abs)
+     Return the absolute value of the argument.
+
+16.What is the output of this code when run from python interpreter
+ 
+   output:
+         __main__
+
+17.What is the output of this code when run from a python script.
+
+   output:
+           __main__
+
+18.Does the dir of int class contain an attribute    name 	(Y/N).
+
+   output: No
+
+19.Predict the output of 
+  
+   output:
+          __main__
+          builtins
+          int
