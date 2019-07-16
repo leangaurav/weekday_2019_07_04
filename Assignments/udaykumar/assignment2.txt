@@ -1,0 +1,114 @@
+1.Input temperature in Fahrenheit in print in Celsius.
+
+ sol:
+   F = int(input("Enter the temperature value in Farenheit : "))
+   C = ((F-32)*5)/9
+   print("The temperature in celcius : ", C)
+
+2.Write a program to input a number and print its square and cube.
+   
+  sol:
+  n = int(input("enter the number:"))
+  squre =  n**2
+  cube  =  n**3
+  print('squre of the {0} is {1} and cube of the {0} is {2}'.format(n,squre,cube))
+
+3.WAP to input a number n and a number m and print the result of following
+     n2 + m2
+
+   sol:
+    n = int(input("enter the number:"))
+    m = int(input("enter the number:")) 
+    res = n**2 + m**2
+    print(res)
+
+ 4.WAP to input a numbers M and N and print result of MN. (use both ** and pow)
+  
+   sol:
+     import math as m
+     M = int(input("enter the number:"))
+     N = int(input("enter the number:")) 
+     res1 = M**N
+     res2 = m.pow(M,N)
+     print(res1,res2) 
+
+5. Write a simple interest calculator.
+
+  sol:
+    P = int(input("Enter the Principle Amount : "))
+    T = int(input("Enter the Time duration : "))
+    R = int(input("Enter the rate of interest"))
+    Simple_intrest = (P*T*R)/100
+    print("The required simple interest is ", Simple_intrest)
+
+6.Input Principal, Rate, Time and print Compound Interest and Amount.
+
+  sol:
+    P = int(input("Enter the Principle amount : "))
+    T = int(input("Enter the duration of time in years : "))
+    R = int(input("Enter the rate of interest : "))
+    x = (1+(R/12))**(12*T)
+    A = P*x
+    print("The required amount is : ", A)
+    Compound_I = (P*x)-P
+    print("The required Compound interest is : ", Compound_I)
+
+7.WAP to print sum of first n natural numbers. (n needs to be taken as input). 
+
+  sol:
+    n = int(input("Enter the value: "))
+    sum = 0
+    for i in range(1,n+1):
+        sum = sum + i
+    print('sum of first {0} is {1}'.format(n,sum)) 
+
+8.WAP to input 2 numbers and swap them. (write using both normal logic with temp variable and also the pythonic way).
+
+  sol:
+   a = input("Enter the first number : ")
+   b = input("Enter the second number : ")
+   print("before the swapping values of a and b",a,b)
+   c = a
+   a = b
+   b = c
+   print("after the swapping values of a and b",a,b)
+   a,b = b,a
+   print("after the swapping values of a and b",a,b)
+
+9.WAP to print ascii value of all white-space characters present in python.
+  
+ sol:
+    list1 = ['\n',':',';','\t','\b']
+    for i in range(len(list1)):
+        res = ord(list1[i])
+        print('ascii value {0} is {1}'.format(list1[i],res))
+
+
+10.Input a single character and print its ascii values.
+
+sol:
+     x = input("Enter a character : ")
+     print('The ASCII value of the given char' + x + "is : ", ord(x))
+
+
+11.WAP that takes area of a circle and gives back the radius and circumference.
+
+  sol:
+	import math
+	def circle_cum(n):
+    	   r= math.sqrt(int(a)/math.pi)
+           circ = 2 * math.pi * r
+           print("The required cirumference is : ", circ)
+	a = input("Enter the area of circle")
+	circle_cum(a)
+
+12.We need to input marks in 5 subjects out of 100 and print percentage.
+
+   sol:
+       total = 0
+       for i  in range(5):
+           marks = int(input("enter the marks:"))
+           print('{0} subject marks is {1}'.format(i,marks)) 
+           total += marks
+       print('total marks of the given student',total) 
+
