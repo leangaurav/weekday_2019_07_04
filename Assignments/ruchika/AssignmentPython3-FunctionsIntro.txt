@@ -1,0 +1,153 @@
+Ans-1
+str1=input('Enter String 1 :')
+str2=input('Enter String 2 :')
+print('Before Swap, strings are:', str1,str2)
+str1,str2= str2,str1
+print('After Swap, strings are:', str1,str2)
+
+Ans-2
+from random import randint
+sum=0
+for i in range(4):
+    print(randint(0,26))
+    sum=sum+randint(0,26)
+
+print('The avg of 4 numbers: ',sum/4)
+
+Ans-3
+i)
+for i in range(97,122):
+    print(chr(i).upper())
+    str=str+chr(i).upper()
+    
+print('The alphabet at position  5 is ',str[4])
+
+ii)
+dir(str)
+
+Ans-4
+def get_si(p,r,t):
+    si=(p*r*t)/100
+    return si
+get_si(1000,7,2)
+
+Ans-5
+def get_si(p,r, t):
+    print(p,r,t)
+    si=(p*r*t)/100
+    return si
+
+def get_amount(p,r=10,t=1):
+    print(p,r,t)
+    si=get_si(p,r,t)
+    amount=p+si
+    return amount
+    
+get_amount(1000)
+
+
+Ans-6
+def get_ci(p,r,t):
+    ci = p * (pow((1 + r / 100), t))
+    return ci
+
+get_ci(1000,5,3)
+
+Ans-7
+def get_q_r(n,m):
+    q=n/m
+    r=n%m
+    return q,r
+
+q,r=get_q_r(10,3)
+l=[]
+l.append(q)
+l.append(r)
+t=tuple(l)
+print(t)
+
+Ans-8
+from math import sqrt
+def get_hypo(h,b):
+    hypo=pow(h,2)+pow(b,2)
+    hypo_val=sqrt(hypo)
+    return hypo_val
+
+get_hypo(16,25)
+
+Ans-9
+sec=int(input('Enter seconds'))
+day = int(sec/86400)
+sec = sec%86400
+hour= int(sec/3600)
+sec= sec%3600
+min= int(sec/60)
+sec = int(sec%60)
+
+
+print(day,hour,min,sec)
+
+Ans-10
+import sys
+sys.version
+
+Ans-11
+2,-2
+
+Ans-12
+None
+
+Ans-13
+real= int(input('Enter real part of complex number'))
+imag= int(input('Enter imag part of complex number'))
+c=complex(real,imag)
+print('re:',c.real,' im:', c.imag)
+
+Ans-14
+i)
+def input_tuple(r,i):
+    t=(r,i)
+    return t
+real= input('Enter real part of complex number')
+imag= input('Enter imag part of complex number')
+input_tuple(real,imag)
+
+ii)
+def print_complex(re,im):
+    return re,im
+
+real= input('Enter real part of complex number')
+imag= input('Enter imag part of complex number')
+print_complex(real,imag)
+
+Ans-15
+def add(re1,im1,re2,im2):
+    re=re1+re2
+    im=im1+im2
+    return re,im
+def sub(re1,im1,re2,im2):
+    re=re1-re2
+    im=im1-im2
+    return re,im
+
+print(add(10,20,5,-30))
+print(sub(10,20,5,-30))
+
+Ans-16
+def div(re1,im1,re2,im2):
+    re=re1/re2
+    im=im1/im2
+    return re,im
+def mul(re1,im1,re2,im2):
+    re=re1*re2
+    im=im1*im2
+    return re,im
+def conj(re1,im1):
+    conj=re1-im1
+    return conj
+
+print(div(10,20,5,-30))
+print(mul(10,20,5,-30))
+print(conj(10,20))
+
+

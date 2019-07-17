@@ -1,0 +1,128 @@
+def swap(s1,s2):
+    x = ''
+    x = s1 
+    s1 = s2
+    s2 = x
+    return(s1,s2)
+
+swap("Hello","World")
+Ans:('World', 'Hello')
+
+import random as rn
+a = rn.randrange(0,26)
+b = rn.randrange(0,26)
+c = rn.randrange(0,26)
+d = rn.randrange(0,26)
+
+def Average():
+    avg = (a + b + c + d) / 4
+    print(a, b, c, d)
+    print(avg)
+    return avg
+
+print("The average of 4 random numbers is: ", Average())
+Ans:
+21 5 12 18
+14.0
+The average of 4 random numbers is:  14.0
+
+import random
+s = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+r = random.randint(0 , len(s))
+print(s[r])
+Ans:o
+
+def get_si(p, r, t):
+    si = p * r * t / 100
+    return si
+print(get_si(1000,5,2))
+Ans:100.0
+
+p = int(input("Enter a number:"))
+def get_amount(p,t=1, r=10): # pre-defined rate and time period
+    def get_si():
+        si = (p * t * r) / 100
+        return si
+    amount = p + get_si()
+    return amount
+print("The amount is: ", get_amount(p))
+Ans:
+Enter a number:1000
+The amount is:  1100.0
+
+def get_ci(p, r, t):
+      ci = p * (((1 + r / 100) ** t) - 1)
+      return ci
+c = get_ci(1000, 10, 5)
+print(c)
+Ans:610.5100000000006
+
+n = int(input("Enter n: "))
+m = int(input("Enter m: "))
+t = ()
+def get_q_r(n , m):
+    t = (n / m , n % m)
+    return t
+t = get_q_r(n , m)
+print(t)
+Ans:
+Enter n: 100
+Enter m: 10
+(10.0, 0)
+
+a = int(input("Enter a number:"))
+b = int(input("Enter a number:"))
+print(a, b)
+def get_q_r():
+    r = a % b
+    q = a // b
+    return(r,q)
+print("The remainder and quotient are: ", tuple(get_q_r()))
+Ans:
+Enter a number:121
+Enter a number:12
+121 12
+The remainder and quotient are:  (1, 10)
+
+from math import sqrt
+h = int(input("Enter height of triangle: "))
+b = int(input("Enter base of triangle: "))
+def hypo(h , b):
+    hyp = sqrt(h ** 2 + b ** 2)
+    return hyp
+hy = hypo(h , b)
+print(hy)
+Ans:
+Enter height of triangle: 17
+Enter base of triangle: 4
+17.46424919657298
+
+s = int(input("Enter number of seconds: "))
+d = int(s / 86400)
+h = int((s % 86400) / 3600)
+m = int((s % (86400 * 3600)) / 60 )
+s = int((s % (86400 * 3600 * 60)) / 60)
+print(d, "Days", h, "Hours", m, "Minutes", s, "Seconds")
+Ans:
+Enter number of seconds: 10000
+0 Days 2 Hours 166 Minutes 166 Seconds
+
+X = 2
+X *= 3
+X = X%4
+Y = -X
+print(X, Y)
+Ans:2 -2
+
+def funct():
+    pass
+print(funct())
+Ans:None
+
+r = int(input("Enter real part of the complex number: "))
+im = int(input("Enter imaginary part of the complex number: "))
+print("re:", r, "im:", im)
+Ans:
+Enter real part of the complex number: 3
+Enter imaginary part of the complex number: 4
+re: 3 im: 4

@@ -1,0 +1,41 @@
+Q1: d = {}
+    for i in range(1 , 6):
+      d[i] = -i
+    print(d)
+    
+Q2: Everything except 1, 3, 9, 11, 12
+
+Q3: L1 = [1,2,3,4]
+    L2 = [10,20,30,40]
+    d = dict(zip(L1,L2))
+    print(d)
+    
+Q4: d = {chr(i) : i for i in range(65 , 91)}    
+    print(d)
+    
+Q5: d = {0:'zero', 1:'one', 2:'two', 3:'three', 4:'four', 5:'five', 6:'six', 7:'seven', 8:'eight', 9:'nine'}
+    n = int(input("Enter a number between 0 and 9: "))  
+    print("Number in words:", d[n])
+    print(d.keys())
+    print(d.values())
+    for i in d.keys():
+      print(i , d[i])
+    
+Q6: {'A': 'Apple', 'B': 'Ball', 'C': 'Cat', 'D': 'Dog'}
+    {'A': 'Apple', 'C': 'Cat'}
+    
+Q7: s = input("Enter string: ")
+    d = {'a':0, 'e':0, 'i':0, 'o':0, 'u':0}
+    for c in s:
+      if c.lower() in d.keys():
+        d[c] += 1
+    
+    print(d)
+    
+Q8: s = input("Enter string: ")
+    d = {}
+    for c in s:
+      d[c] = d.get(c,0) + 1
+    print(d)
+    
+Q9: 
