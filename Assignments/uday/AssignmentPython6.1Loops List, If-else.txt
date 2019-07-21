@@ -1,0 +1,181 @@
+1 WAP to input a string and print individual characters in the string using for loop. 
+
+  sol:   
+      s = input("enter the string")
+      for i in range(len(s)):
+          print(s[i])
+
+2.WAP to input a string and print the ASCII value of each character in the string. 
+
+  sol:
+       s = input("enter the string")
+       for i in range(len(s)):
+           print('{0} ASCII value is {1}'.format(s[i],ord(s[i])))
+
+3.Write a function that takes a list of numbers from user as argument and returns the sum of only odd numbers (Use only for loop. No need to use if statement). 
+
+  sol:
+      def sum_of_odd(a):
+           return sum((i*(i%2) for i in a), 0)
+    
+      n = int(input("size of the list:"))  
+      a =[]
+      for i in range(n):
+          i = int(input("enter the marks:"))
+          a.append(i)
+      print(a)
+      sum_of_odd(a)
+
+4. WAP to input a list of numbers and store in a tuple. Now input another number and print the index of this number in the tuple. [Use index function] 
+
+   sol:
+       list = [1,2,3,5]
+       t = tuple(list)
+       e = [int(input("enter the number:"))]
+       new = tuple(e)
+       t1 = t + new
+       print(new)
+       print(t1)
+       print(t1.index(e))
+
+5.Create a list of 10 random numbers and then print the list, sum of all numbers and average. Use a for loop. Also print elements at only even indexes in the list.
+
+  sol:
+      import random
+      a = []
+      for i in range(10):
+          a.append(random.randrange(0,26))
+      print(a)
+      s = sum(a) 
+      average = s/10
+      print('sum of the given numbers:',s)
+      print('average of the given numbers',average)
+      e = a[0:10:2]
+      print(e)
+
+6.WAP to input 10 numbers repeatedly (using range based for loop) and store them in a list. Print the list and sum of numbers in the list. 
+
+  sol:
+      a = []
+      for i in range(10):
+          i =int(input('enter the numbers'))
+          a.append(i)
+      print('sum of the given list elements',sum(a))
+
+7. WAP to input a number and print its table. Ex: if user enters the number as 7, output should b
+
+   sol:
+        n =int(input('enter the number:'))
+        for i in range(1,11):
+            m = n*i
+            print('{0} X {1}= {2}'.format(n,i,m))
+
+8. WAP to print total number of spaces in a string (Use for loop to iterate over the string. Don’t use count function).
+
+   sol:
+       str1 = input("enter the string:")
+       count = 0
+       for i in range(len(str1)):
+           if str1[i] == ' ':
+              count+= 1
+       print('total number of spaces in a string',count) 
+
+
+9.WAP to input a string and count number of vowels in the string. [Note: it should work for both capital and small alphabets] 
+
+  sol:
+      str1 = input("enter the string:")
+      count = 0
+      l = ['a','e','i','o','u','A','E','I','O','U']
+      for i in range(len(str1)):
+          if str1[i] in l:
+              count+= 1
+      print('total number of vowels in a string:',count)
+
+10. WAP to inputa a string and replace all vowels with ‘_’.[Hint: Convert string to list. Remember!! Strings are immutable. Replace in the list and then join] 
+
+    sol:
+         str1 = input("enter the string:")
+         a = []
+         print(a)
+         l = ['a','e','i','o','u','A','E','I','O','U']
+         for i in range(len(str1)):
+             a.append(str1[i])
+             if a[i] in l:
+                 a[i] ='_'
+         print(a)
+         str2 =''.join(a)
+         print(str2)
+  
+11. Find output:
+
+     a) Num: 0
+        loop ends
+   
+     b)Num: 0
+       An exception has occurred, use %tb to see the full traceback.
+
+       SystemExit
+
+12. Find the output of the following code snippets.
+
+    a)*****
+      *****
+      *****
+      *****
+      *****
+
+    b)1
+      22
+      333
+      4444
+      55555
+
+    c)1
+      22
+      333
+      4444
+      55555
+
+    d)**
+      ***
+      ****
+      *****
+      ******
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

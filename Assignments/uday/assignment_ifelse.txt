@@ -1,0 +1,273 @@
+1.WAP to input 2 numbers and check whether the first is divisible by the second and print true or false depending on the divisibility. 
+
+  sol:
+      n1 = int(input("enter the number"))
+      n2 = int(input("enter the number"))
+      if n1%n2 == 0:
+          print('{0} is divisible by the {1}'.format(n1,n2))
+      else:
+          print('{0} is  not divisible by the {1}'.format(n1,n2))
+
+
+2. In the palindrome example, make the code case insensitive.i.e. Naman should also be treated as a palindrome (HINT: first convert to either upper or plower case). 
+ 
+   sol:
+       s = input("enter the string")
+       s = s.upper()
+       p = s[::-1]
+       print(p)
+       if s ==p:
+           print("The given string is palindrome")
+       else:
+           print("The given string is not a palindrome")
+
+3.WAP to input the sides of a triangle and print whether equilateral(all sides equal), isosceles (2sides equal), or scalene (no sides equal).
+
+  sol:
+      a = int(input("enter the number"))
+      b = int(input("enter the number"))
+      c = int(input("enter the number"))
+      if a== b and a==c and b==c:
+           print('the triangle is equilateral')
+      elif (a== b and b!=c) or (b== c and a!=c ) or (a== c and b!=c ):
+           print('the triangle is isosceles')
+      else:
+           print('the triangle is scalene')
+
+4.WAP to input a number and print if it is even or odd. 
+  
+  sol:
+      n = int(input("enter the number"))
+      if n%2 == 0:
+           print('given number is even number')
+      else:
+           print('given number is odd number')
+
+5.WAP to input age and print the respective text depending on the age ranges as present in the table. 
+ 
+  sol:
+      a = int(input("enter the age:"))
+      if a>=0 and a<=12:
+          print('child')
+      elif a>=13 and a<=17:
+          print('Teen')
+      elif a>=18 and a<=50:
+          print('adult')
+      elif a>=51 and a<=100:
+          print('Senior Citizen')
+      else:
+          print('Contratulations')
+
+6.WAP to input year (check if user enters valid year. Should be 4-digit number and should not be negative) and print whether leap year or not. (If really interested in why you also have to check the divisibility by 400 just google the exact time it takes for the earth to revolve around the sub) 
+ 
+  sol:
+      n = int(input("enter the number:"))
+      if n >=1000 and n<=9999:
+           if n%400 == 0 and n%4 == 0:
+                print('{0} is a leap year'.format(n))
+           else:
+                print('{0} is  not a leap year'.format(n))
+
+
+7.WAP to input a string and convert it to Upper Case if number of characters is odd and convert to lower case otherwise.
+
+  sol:
+      n = input("enter the string:")
+      s = len(n)
+      if s%2 == 0:
+         print(n.lower())
+      else:
+         print(n.upper())
+
+8. WAP to input a string and print Veg if the string doesn’t contain the word egg. Otherwise print Non-Veg. As usual eggs can be both big and small. 
+
+   sol:
+       str1 = input("enter the string:")
+       str1  = str1.upper()
+       substring = 'EGG'
+       n = str1.find(substring,0,len(str1))
+       if n == -1:
+          print('veg')
+       else:
+          print('non veg')
+
+9.Give output of:
+
+  a) True
+
+  b) False
+
+  c)weird !!
+
+  d)[4, 3, 2, 1]
+
+
+10. WAP to input marks in 5 subjects and print the grade as per following logic:
+% between 90-100 Grade-A
+% between 80 - 89 Grade-B
+% between 60 - 79 Grade-C
+% < 60 Grade-F 
+
+   sol:
+       def mark_s(a,n):
+           s =sum(a)
+           p = (s/500)*100
+           if p >=90 and p <=100:
+               print("Grade -A")
+           elif p >=80 and p <=89:
+               print("Grade -B") 
+           elif p >=60 and p <=79:
+               print("Grade -C")
+           else:
+               print('Grade-F') 
+        
+      n = int(input("no of subjects:"))        
+      for i in range(n):
+          a[i] = int(input("enter the marks:"))
+      print(a)
+      mark_s(a,n)
+
+11.WAP to input age and salary and calculate Tax as per tax rates if following table: 
+   0-2,50,000 0 0
+   2,50,001-5,00,000 5% 3%
+   5,00,001-10,00,000 10% 8%
+   Salary>10,00,001 15% 12% 
+
+   sol:
+      def tax(age,sal):
+          if age < 60:
+             if sal >= 0 and sal <= 250000:
+                tax = 0
+                print("tax rate",tax)
+             elif sal >= 250001 and sal <= 500000:
+                 tax = (5/100)*sal
+                 print("tax rate",tax)
+             elif sal >= 500001 and sal <= 1000000:
+                 tax = (10/100)*sal
+                 print("tax rate",tax)
+             else:
+                 tax = (15/100)*sal
+                 print("tax rate",tax)
+          else:
+               if sal >= 0 and sal <= 250000:
+                    tax = 0
+                    print("tax rate",tax)
+               elif sal >= 250001 and sal <= 500000:
+                    tax = (3/100)*sal
+                    print("tax rate",tax)
+               elif sal >= 500001 and sal <= 1000000:
+                    tax = (8/100)*sal
+                    print("tax rate",tax)
+               else:
+                    tax = (12/100)*sal
+                    print("tax rate",tax)
+        
+            
+      age = int(input("enter the age:")) 
+      sal = int(input("enter the salary:")) 
+      tax(age,sal)
+
+12.Try each of the below statements separately (remember difference between statement and expression) on the python interpreter and guess the output before trying: 
+
+   sol:
+        print(20 if not 1== 1 else 10)
+        print(30 if not 1== 1 else 20  if 'a'< 'A' else 10)
+        print(40 if not 1== 1 else 30  if 'a'< 'A' else 20 if '' else 10 )
+        print('No' if not 1== 1 else ( 'No' if 'a'< 'A' else ('OMG' if 'Oh !!' else 'No' )))
+
+        output: 10
+                10
+                10
+                OMG
+
+13.WAF: bmi() that takes the weight in kg and height in cm of a person, calculates and returns the BMI.
+   Write code that calls this function after taking height and weight as inputs and then prints underweight, normal, overweight or obese depending on the value of BMI. 
+     
+   sol:
+      def BMI(w,h):
+          bmi = float((w/(h)**2)*703)
+          if bmi < 18.5:
+               print('the person is underweight')
+          elif bmi >=18.5 and bmi<=25:
+               print('the person is normal')
+          elif bmi > 25 and bmi<=30:
+               print('the person is overweight') 
+          else:
+               print('the person is obese') 
+        
+      weight  = float(input("enter the first person weight:"))
+      height = int(input("enter the second person height:"))
+      BMI(weight,height)
+
+14.Take input of age of 3 people by user and determine oldest and youngest among them.
+    
+   sol:
+       first_person  = int(input("enter the first person age:"))
+       second_person = int(input("enter the second person age:"))
+       third_person  = int(input("enter the third person age:"))
+       if first_person < second_person and first_person < third_person:
+           print("the youngest person is first_person",first_person)
+           if second_person < third_person:
+                print("the oldest person is third_person",third_person)
+           else:
+                print("the oldest person is second_person",second_person)   
+       elif second_person < first_person and second_person < third_person:  
+             print("the youngest person is second_person",second_person)
+             if first_person < third_person:
+                  print("the oldest person is third_person",third_person)
+             else:
+                  print("the oldest person is first_person",first_person)
+       else:  
+            print("the youngest person is third_person",third_person)
+            if first_person < second_person:
+                print("the oldest person is second_person",second_person)
+            else:
+                print("the oldest person is first_person",first_person)
+                
+15. WAP to input a number and check if number is divisible by both 5 and 7. 
+
+    sol:
+        n  = int(input("enter the number:"))
+        if n%5 ==0 and n%7 == 0:
+             print("given number divisible by both 5 and 7")
+        else:
+             print("given number is not divisible by both 5 and 7")        
+        
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
