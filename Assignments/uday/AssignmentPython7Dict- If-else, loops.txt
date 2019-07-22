@@ -1,0 +1,146 @@
+1.WAP to create a dictionary of numbers mapped to their negative value for numbers from 1-5. The dictionary should contain something like this: Do with both with and   without range based for loop.{1:-1,2:-2,3:-3….} 
+  
+  sol:
+
+      n=int(input("Input a number "))
+      d = dict()
+      for x in range(1,n+1):
+           d[x]= -x
+
+      print(d)
+ 
+2.predict the output: 
+
+  1)SyntaxError: invalid syntax
+
+  2) {1: 2, 2: 3}
+
+  3)SyntaxError: invalid syntax
+
+  4){(1, 2), (2, 3)}
+
+  5)NameError: name 'c' is not defined
+
+  6){'a': 'A', 'b': ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'], 'c': [1, 2, 3]}
+
+  7){1: 2, 2: 3}
+
+  8){1: 2, 2: 3}
+
+  9)SyntaxError: invalid syntax
+  
+  10){'x': 2, 'y': 3}
+  
+  11)SyntaxError: keyword can't be an expression
+
+  12)SyntaxError: keyword can't be an expression
+
+
+3. Read help for zip and write a program that has two lists l1 = [1,2,3,4] ,l2 = [10,20,30,40] And converts them to a dictionary d containing { 1:10,2:20 …….}
+
+   sol:
+       l1 =[1,2,3,4]
+       l2 =[10,20,30,40]
+       z = zip(l1,l2)
+       d = dict(z)
+       print(d)
+
+4.Use range based for loop to store all upper case alphabets and their corresponding ASCII values in the dictionary d. The result should be d = {‘A’: 65, ‘B’:66,…..}
+
+  sol:
+      d = dict()
+      for x in range(65,91):
+           d[chr(x)]= x
+      print(d)
+
+5. Create a mapping of number to word from 0-9. (0:’zero’……)
+   • Ask user for a single digit number and print the corresponding word format.
+   • Print all keys of above dictionary
+   • Print all Values of a dictionary
+   • Print all Key and Value pairs of above dictionary 
+
+   sol:
+      li1 =[0,1,2,3,4,5,6,7,8,9]
+      li2 =['zero','one','two','third','four','five','six','seven','eight','nine']
+      d = dict(zip(li1,li2))
+      print(d)
+      print(list(d.keys()))
+      print(list(d.values())) 
+
+6. Predict Output of:
+
+   sol:
+       {'A': 'Apple', 'C': 'Cat'}
+
+7.WAP to input a string and count occurrence of each vowel in a string.
+  Ex: if user enters:
+      “Beautiful Day” 
+  sol:
+      vowels ='aeiou' 
+      str1 = input('enter the string:')
+      str1 = str1.casefold()
+
+      count = {}.fromkeys(vowels,0)
+      for char in str1:
+          if char in count:
+             count[char] += 1
+
+      print(count)
+
+8. Update above program to print frequency of each alphabet present in string.
+
+   sol:
+      str1 = input('enter the string:')
+      all_freq = {} 
+      for i in str1: 
+          if i in all_freq: 
+              all_freq[i] += 1
+          else: 
+              all_freq[i] = 1 
+      print ("Count of all characters of given string is :\n "+  str(all_freq)) 
+
+9.WAP that takes a string as input and prints frequency of each word.
+
+  sol:
+      str1=input("Enter string:")
+      l=[]
+      l=str1.split()
+      wordfreq=[l.count(p) for p in l]
+      print(dict(zip(l,wordfreq)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

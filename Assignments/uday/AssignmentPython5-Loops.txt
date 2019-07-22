@@ -1,0 +1,217 @@
+1. WAP to print first n natural numbers (input n from user).
+
+sol:
+     n = int(input("enter the number:"))
+     for i in range(1,n+1):
+         print(i)
+
+2. WAP to find sum of first n natural numbers 
+
+   sol:
+        n = int(input("enter the number:"))
+        sum = 0
+        for i in range(1,n+1):
+            sum = sum + i
+        print('sum of first {0}natural numbers  is {1}'.format(n,sum))
+    
+3.WAP to print first n natural numbers in reverse order.
+     
+   sol:
+       n = int(input("enter the number:"))
+       i = 0
+       while n>i:
+         print(n)
+         n -= 1
+#4. WAP to input a number and print its factorial. 
+   
+   sol:   
+     n = int(input("enter the number:"))
+     f= 1
+     for i in range(1,n+1):
+         f = f*i
+     print("factorial of given number:",f) 
+
+     
+5.WAP to print Fibonacci sequence till n.
+  
+  sol:
+       n = int(input("enter the number:"))
+       t1 = 0 
+       t2 = 1
+       i =0
+       if n <= 0:
+            print("Please provide a number greater than zero")
+       elif n == 1:
+            print("This Fibonacci sequence has {} element".format(n), ":")
+            print(t1)
+       else:
+            print("This Fibonacci sequence has {} elements".format(n), ":")
+       while i< n:
+           print(t1, end=', ')
+           t3 = t1 + t2
+           t1 = t2
+           t2 = t3
+           i += 1
+
+
+6.WAP to print all digits of a number input from user. 
+
+   sol:
+      n=int(input("Enter a number:"))
+      tot=0
+      a = []
+      while(n>0):
+         dig=n%10
+         a.append(dig)
+         n=n//10
+    
+      print(a[::-1])
+
+7.WAP to find sum of all digits of a number.
+
+sol:
+    n=int(input("Enter a number:"))
+    tot=0
+    while(n>0):
+       dig=n%10
+       tot=tot+dig
+       n=n//10
+    print("The total sum of digits is:",tot)
+
+8.WAP to find sum of following series given n as input from user
+      1 + 2! + 3! + 4! + 5! + ….n! 
+  sol: 
+      n=int(input("Enter a number:"))
+      sum = 0
+      for i in range(1,n+1):
+         f=1
+         for j in range(1,i+1):
+             f = f*j
+        
+         sum += f
+
+      print('sum of the given series is ',sum)
+
+9. WAP to input base and exponent and print result without using inbuilt function pow(use       for orwhile loop).
+
+sol:
+    base=int(input("Enter a base:"))
+    exponent=int(input("Enter a exponent:"))
+    i=1
+    res = base
+    if exponent == 0:
+        print(1) 
+    elif exponent == 1:
+        print(base)
+    else:
+        while exponent >i:
+            res = res * base
+            exponent -= 1    
+        print(res)    
+ 
+10. Print following patterns: 
+    A)
+     for i in range(1,6):
+        print('*'*i) 
+
+
+    B)
+      for i in range(5,0,-1):
+          print('*'*i)
+   
+    C)
+      for i in range(5,0,-1):
+          print(' '*i, end ='')
+          print('*'*(6-i))
+
+
+    D)
+      n=20
+      for i in range(1,6):
+          print(' '*(n-i) + '* '*(i))
+
+
+11. Print following number patterns
+   A)
+     for i in range(1,6):
+         for j in range(i):
+             print(i,end ='')
+             print('')
+
+   B)
+     for i in range(1,6):
+        for j in range(1,i+1):
+            print(j,end ='')
+         print('')
+
+   C)
+     for i in range(5,0,-1):
+        for j in range((6-i)):
+            print(i,end ='')
+        print('')
+
+   D)
+
+     for i in range(1,6):
+         g =  str(i)
+         print(' '*(6-i) + g*i)
+
+12. Print following number patterns
+
+    A)
+    for i in range(1, 6):
+        for j in range(65, 65+i):
+            a = chr(j)
+            print (a,end='')
+         print('')
+ 
+    B)
+       print("Print Alphabets and Letters pattern in python ")
+       lastNumber = 5
+       asciiNumber = 65
+       for i in range(0, lastNumber):
+          for j in range(0, i+1):
+              character  = chr(asciiNumber)
+              print(character, end='')
+              asciiNumber+=1
+          print(" ")
+
+     C)
+       
+       lastNumber = 5
+       asciiNumber = 65
+       for i in range(0, lastNumber):
+            for j in range(0, i+1):
+                character  = chr(asciiNumber)
+                print(character, end='')
+            asciiNumber+=1
+            print(" ")
+    
+        
+        
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
