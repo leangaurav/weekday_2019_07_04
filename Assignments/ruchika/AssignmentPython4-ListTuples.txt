@@ -1,0 +1,103 @@
+Ans-1
+tuple=(1,2,3,4,5)
+l=list(tuple)
+print(type(l))
+
+Ans-2
+L=[1,3,5,7]
+T=(8,6,4,2)
+T1=list(T)
+LS=L+T1
+L1
+
+Ans-3 List is mutable data type and Tuple is immutable data type.
+
+Ans-4
+l=['a','d','c','A','C']
+l.reverse()
+l
+
+Ans-5
+l=[10,11,20,21,30,31,40,41]
+l[1::2]
+
+Anss-6
+Two types: 
+Deep Copy= copy.deepcopy(l)
+Shallow Copy=copy.copy(l)
+import copy
+l=[1,2,3]
+l1=l.copy()
+l2=copy.copy(l)
+l3=copy.deepcopy(l)
+print(l1)
+print(l2)
+print(l3)
+
+Ans-7
+a
+1
+
+Ans-8
+[1,4,6,8]
+[1,3,5,7]
+
+Ans-9
+[1,3,5,[7,9]]
+[1,3,5,[7,9],11,13]
+
+Ans-10
+<class 'tuple'>
+<class 'int'>
+<class 'int'>
+<class 'tuple'>
+
+Ans-11
+import numpy as np
+A = np.array([[1, 2, 3], [4, 5, 6],[7,8,9]])
+print(A)
+
+Ans-12
+('s', 't', 'r', 'i', 'n', 'g')
+
+Ans-13
+('s', 't', 'r', 'i', 'n', 'g')
+('g', 'n', 'i', 'r', 't', 's')
+('n', 's')
+
+Ans-14
+True
+False
+1
+0
+
+Ans-15
+str=input('Enter a String- ')
+l=['not Palindrome','Palindrome']
+reverse=str[::-1]
+index = reverse == str
+print('The input string is',l[int(index)])
+
+Ans-16
+tuple=()
+for i in range(21,1,-1):
+    if i%5==0 :
+        tuple = tuple + (i,)
+    else:
+        pass
+    
+
+tuple
+
+Ans-17
+
+str='ruchika'
+list(str)
+
+Ans-18
+<class 'list'>
+<class 'NoneType'>
+'str' object has no attribute 'toupper'
+<class 'bool'>
+
+

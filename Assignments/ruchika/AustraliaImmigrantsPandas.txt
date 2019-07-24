@@ -1,0 +1,84 @@
+Ans-1
+i)
+df=pd.read_excel(r'C:\Users\z003p9et.AD001\weekday_2019_07_04\Australia.xlsx', skiprows=20, sheet_name='Australia by Residence')
+ii)
+print(df.columns)
+iii)
+print(df.index)
+
+Dataset Analysis
+
+Ans-2
+i)
+df.describe(include='all')
+ii)
+print(df[0:10].index)
+print(df['Type'].index)
+print(df[0:10].values)
+print(df['Type'].values)
+
+iii)
+
+print(df.shape)
+print(df.dtypes)
+
+iv)
+Mostly are int64 and obhect data type.
+
+Ans-3
+i)
+row_id=np.where(df.Type == 'Emigrants')
+df_drop=df.drop(row_id[0],axis=0)
+df_drop
+
+ii)
+df.isnull.count()
+There is no such column which have missing data
+
+iii)
+df.drop(columns=['Type','Coverage','AREA','REG','DEV',2009,2010,2011,2012,2013])
+
+Ans-4
+i)
+df_re=df.rename(columns={'OdName':'Country','RegName':'Region'})
+df_re
+
+ii)
+col=df.loc[1980:2013]
+new_col=[str(i) for i in col]
+d=dict(zip(col,new_col))
+df_strcol=df.rename(columns=d)
+df_strcol.columns
+
+iii)
+df.to_csv('AustraliaFiltered.csv')
+
+Ans-5
+i)
+df_data=pd.DataFrame(df)
+df_immdata=df_data[df_data.Type=='Immigrants']
+df_immdata['Total']=df_immdata.iloc[:,9:43].sum(axis=1)
+df_immdata
+
+ii)
+df_sort=df_immdata.sort_values(['Total'])
+
+iii)
+df_sort=df_immdata.sort_values(['Total'])
+df_world=df_sort[df_sort.AreaName!='World']
+df_world
+
+iv)
+df_world.tail()
+v)
+df_world.OdName.value_counts()
+df_world.AreaName.value_counts()
+g=df_world.groupby(['AreaName','OdName'])
+for data in g:
+    print(data)
+	
+vi)
+df_world[df_world.Total==0].OdName
+
+vii)
+df_world[df_world.Total==0].OdName.count()

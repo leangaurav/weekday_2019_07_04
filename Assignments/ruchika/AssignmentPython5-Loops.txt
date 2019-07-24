@@ -1,0 +1,114 @@
+Ans-1
+n=int(input('Enter a number :'))
+i=1
+print('The print of first {0} natural numbers is'.format(n))
+while i<=n:
+    print(i)
+    i+=1
+
+
+Ans-2
+n=int(input('Enter a number :'))
+i=1
+sum=0
+while i<=n:
+    sum=sum+i
+    i+=1
+print('The sum of first {0} natural numbers is {1}'.format(n,sum))
+
+Ans-3
+n=int(input('Enter a number :'))
+i=1
+print('The print of first {0} natural numbers is'.format(n))
+while n>=i:
+    print(n)
+    n-=1
+	
+Ans-4
+n=int(input('Enter a number :'))
+i=n
+sum=1
+while i>=1:
+    sum=sum * i
+    i-=1
+    
+print('The factorail of {0} is {1}'.format(n,sum))
+
+Ans-5
+n=int(input('Enter a number :'))
+sum=0
+prev=0
+i=1
+l=[]
+l.append(i)
+curr=l[0]
+print('The Fibonacci series till {0}'.format(n))
+while i<=n:
+    sum=prev+curr
+    l.append(sum)
+    prev=l[i-1]
+    curr=l[i]
+    i+=1
+        
+print(l)
+
+Ans-6
+y='y'
+while(y!='n'):
+    n=input('Enter a number or n to discontinue:')
+    y=n
+    print(n)
+	
+Ans-7
+n=input('Enter a number :')
+l=list(n)
+sum=0
+for i in l:
+    sum=sum + int(i)
+print('The sum of all digit of the number is', sum)
+
+Ans-8
+def factorial(n):
+    fact=1
+    i=1
+    while i<=n:
+        fact=fact*n*1
+        n-=1
+    return fact
+
+num= int(input('Enter the number:'))
+j=1
+sum=0
+while j<=num:
+    sum=sum+factorial(j)
+    j+=1
+print('The sum of the series is',sum)
+
+Ans-9
+e=input('Enter Base and Exponent').split()
+base=int(e[0])
+expo=int(e[1])
+i=1
+val=1
+while i<=expo:
+    val=val*1*base
+    i+=1
+print('The sum of base={0} and Exponent={1} is {2}'.format(base,expo,val))
+
+Ans-10
+i)
+i=1
+star='*'
+while(i<=5):
+    print(star*i)
+    i+=1
+	
+ii)
+i=5
+star='*'
+while(i>=1):
+    print(star*i)
+    i-=1
+
+iii)
+

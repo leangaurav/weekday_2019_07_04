@@ -1,0 +1,127 @@
+Ans-1
+import numpy as np
+mat_zero=np.zeros(5)
+print(mat_zero.dtype)
+print(mat_zero.itemsize)
+print(mat_zero.shape)
+
+Ans-2
+mat_ones=np.ones((5,4))
+print(mat_ones)
+
+Ans-3
+mat=np.random.randint(1,20,20).reshape(4,5)
+print(mat)
+
+Ans-4
+mat=np.random.randint(1,20,20).reshape(4,5)
+mul_mat=mat*10
+print(mul_mat)
+
+Ans-5
+mat=np.random.randint(1,20,20).reshape(4,5)
+print(mat)
+np.where(mat%2 ==0,-mat,mat)
+
+Ans-6
+M1=np.linspace(1,16,16).reshape(4,4)
+M1
+
+Ans-7
+M1=np.linspace(1,16,16).reshape(4,4)
+M2=M1.T
+M2
+
+Ans-8
+M1=np.linspace(1,16,16).reshape(4,4)
+M2=M1.T
+M3=M1+M2
+M3
+
+Ans-9
+M1=np.linspace(1,16,16).reshape(4,4)
+M2=M1.T
+M3=M1+M2
+MT1=M3.T
+M3 == MT1
+array([[ True,  True,  True,  True],
+       [ True,  True,  True,  True],
+       [ True,  True,  True,  True],
+       [ True,  True,  True,  True]])
+	   
+Ans-10
+M1=np.linspace(1,16,16).reshape(4,4)
+M2=M1.T
+M3=M1+M2
+MT1=M3.T
+M3 == MT1
+M4 = (M1 - M2)
+M4
+
+array([[ 0., -3., -6., -9.],
+       [ 3.,  0., -3., -6.],
+       [ 6.,  3.,  0., -3.],
+       [ 9.,  6.,  3.,  0.]])
+	   
+Ans-11
+M1=np.linspace(1,16,16).reshape(4,4)
+M2=M1.T
+M3=M1+M2
+MT1=M3.T
+M3 == MT1
+M4 = (M1 - M2)
+MT2 = M4.T
+print(M4 == MT2)
+print(M4 == -MT2)
+[[ True False False False]
+ [False  True False False]
+ [False False  True False]
+ [False False False  True]]
+ 
+[[ True  True  True  True]
+ [ True  True  True  True]
+ [ True  True  True  True]
+ [ True  True  True  True]]
+ 
+Ans-12
+R1=np.random.randint(10,40,12).reshape(3,4)
+R1
+
+
+Asn-13
+R1=np.random.randint(10,40,12).reshape(3,4)
+print(R1)
+print(R1.min(axis=0))
+print(R1.max(axis=0))
+print(R1.min(axis=1))
+print(R1.max(axis=1))
+
+Ans-14
+R1=np.random.randint(10,40,12).reshape(3,4)
+R2=R1.sum(axis=1)
+R1[:,3] =R2
+R1
+
+Ans-15
+R1=np.random.randint(10,40,12).reshape(3,4)
+R1
+
+Ans-16
+R1=np.where(R1%2==0, np.nan, R1)
+R1
+
+Ans-17
+np.count_nonzero(np.isnan(R1))
+
+Ans-18
+[ 1  2  3  4  5  6  7  8  9 11 12 13 14 15 16 17 18 19]
+[[ 1  2  3]
+ [ 4  5  6]
+ [ 7  8  9]
+ [11 12 13]
+ [14 15 16]
+ [17 18 19]]
+[[ 1  2  3 11 12 13]
+ [ 4  5  6 14 15 16]
+ [ 7  8  9 17 18 19]]
+
