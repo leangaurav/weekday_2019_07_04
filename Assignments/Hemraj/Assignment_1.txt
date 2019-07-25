@@ -1,0 +1,170 @@
+1.
+F=int(input("enter the temperature in fehrein"))
+print("temp in Fare:", F)
+C=((F-32)*5)/9
+print("temp in celcius:", C)
+
+enter the temperature in fehrein45
+temp in Fare: 45
+temp in celcius: 7.222222222222222
+
+2. 
+a=int(input("enter the number"))
+print("num:", a)
+s=a**2
+print(s)
+c=a**3
+print(c)
+
+enter the number2
+num: 2
+4
+8
+
+3. 
+
+m=int(input("enter a number"))
+print("the number is:",m)
+n=int(input("enter a number"))
+print("the number is:",n)
+s=m**2+n**2
+print(s)
+
+enter a number3
+the number is: 3
+enter a number5
+the number is: 5
+34
+
+4. 
+M=int(input("enter a number"))
+print("the number is:",M)
+N=int(input("enter a number"))
+print("the number is:",N)
+p=M**N
+print(p)
+
+enter a number2
+the number is: 2
+enter a number3
+the number is: 3
+8
+
+M=int(input("enter a number"))
+print("the number is:",M)
+N=int(input("enter a number"))
+print("the number is:",N)
+p=pow(M,N)
+print(p)
+
+enter a number2
+the number is: 2
+enter a number3
+the number is: 3
+8
+
+5. 
+p=int(input("enter a priciple"))
+t=int(input("enter a time period"))
+r=int(input("enter a rate of interest"))
+print("principle:",p)
+print("time period:",t)
+print("rate of interest:",r)
+simple_interest=p*r*t/100
+print(simple_interest)
+
+enter a priciple1000
+enter a time period5
+enter a rate of interest10
+principle: 1000
+time period: 5
+rate of interest: 10
+500.0
+
+6. 
+p=int(input("enter a priciple"))
+t=int(input("enter a time period"))
+r=int(input("enter a rate of interest"))
+n=int(input("enter a number of times that interest is compounded per unit t"))
+print("principle:",p)
+print("time period:",t)
+print("rate of interest:",r)
+print("times compunded interest:",n)
+compound_interest=(p*(1+r/n)**(n*t))
+print(compound_interest)
+
+enter a priciple1000
+enter a time period5
+enter a rate of interest10
+enter a number of times that interest is compounded per unit t2
+principle: 1000
+time period: 5
+rate of interest: 10
+times compunded interest: 2
+60466176000.0
+
+7. 
+n=int(input("first n natural numbers"))
+print("natural number:",n)
+s=n*(n+1)/2
+print(s)
+
+first n natural numbers5
+natural number: 5
+15.0
+
+8.
+a= int(input("enter number"))
+b= int(input("enter number"))
+print("num1:",a)
+print("num2:",b)
+s=a
+a=b
+b=s
+print(a)
+print(b)
+
+enter number23
+enter number24
+num1: 23
+num2: 24
+24
+23
+
+
+9.
+print('The ASCII value of white space character is ', ord(' '))
+
+10.
+print('The ASCII value of a is ', ord('a'))
+The ASCII value of a is  97
+
+11. 
+import math
+A=int(input("area of circle"))
+print("area of circle:", A)
+r=math.sqrt(int(A)/math.pi)
+print("radius of the circle:",r)
+c=2*math.pi*r
+print(c)
+
+area of circle22
+area of circle: 22
+radius of the circle: 2.6462837142006137
+16.62709095169392
+
+12.
+a=int(input("Marks of subject1"))
+b=int(input("Marks of subject2"))
+c=int(input("Marks of subject3"))
+d=int(input("Marks of subject4"))
+e=int(input("Marks of subject5"))
+percentage=((a+b+c+d+e)/500)*100
+print(percentage)
+
+Marks of subject191
+Marks of subject292
+Marks of subject393
+Marks of subject494
+Marks of subject595
+93.0
