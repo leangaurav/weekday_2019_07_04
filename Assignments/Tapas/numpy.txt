@@ -1,0 +1,134 @@
+Q1.
+
+#create a numpy array of 5 zeros.
+#check datatype, itemsize and shape of above
+import numpy as np
+a = np.zeros(5)
+print(a)
+print(a.dtype)
+print(a.itemsize)
+print(a.shape)
+
+Q2.
+
+#create a numpy array of ones of shape (5,4)
+a = np.ones((5,4))
+print(a)
+
+Q3
+
+#create a matrix of shape 4,5 with numbers from 1-20
+a = np.arange(1,21).reshape(5,4)
+print(a)
+
+Q4
+
+#multiply all elements of above array by 10
+a = np.arange(1,21).reshape(5,4)
+b = a * 10
+print(b)
+
+Q5
+
+
+Q6
+
+#print odd elements from array
+a = np.arange(1,21).reshape(5,4)
+print(a)
+np.where(a % 2 != 0,-a,a)
+
+
+Q7
+
+#create a linearly spaced matrix M1 of size 4x4 having values in range 1-16
+M1 = np.arange(1,17).reshape(4,4)
+print(b)
+
+Q8
+
+#create a transpose of above matrix call it M2
+M1 = np.arange(1,17).reshape(4,4)
+M2 = M1.T
+print(M2)
+
+Q9
+
+#find sum of above matrix M3 = (M1 + M2)
+M1 = np.arange(1,17).reshape(4,4)
+M2 = M1.T
+M3 = M1 + M2
+print(M3)
+
+
+Q10
+
+#Find Transpose of M3, Call it MT1. Check if M3 == MT1
+M1 = np.arange(1,17).reshape(4,4)
+M2 = M1.T
+M3 = M1 + M2
+MT1 = M3.T
+print(M3)
+print(MT1)
+M3==MT1
+
+Q11
+
+#find diffrence of M4 = (M1 - M2)
+M1 = np.arange(1,17).reshape(4,4)
+M2 = M1.T
+M4 = M1 - M2
+print(M4)
+
+Q12
+
+#Find Transpose of M4, Call it MT2. Check if M4 == MT2. Also check if M4 == -MT2
+
+M1 = np.arange(1,17).reshape(4,4)
+M2 = M1.T
+M4 = M1 - M2
+print(M4)
+MT2 = M4.T
+M4 == MT2
+M4 == -MT2
+
+Q13
+
+#create a matrix (3x4) R1 of random numbers between 10-40
+R1 = np.random.randint(10,40,12).reshape(3,4)
+print(R1)
+
+Q14.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q12
